@@ -64,6 +64,11 @@ $(document).ready(function() {
         }
     }
     $(`#tabAwards li:eq(${tab}) a`).tab("show");
+    var searchId = $(`#tabAwards li:eq(${tab}) a`).attr("id");
+    if(searchId=="tab-awards-02"){
+            $(".sort").removeClass("sort-01");
+            $(".sort").addClass("sort-02");
+    }
     //$(`#tabs-w .con-w:eq(${tab1}) li:eq(${tab2}) a`).tab("show");
 });
 /* 點擊連結 開啟Tab END */

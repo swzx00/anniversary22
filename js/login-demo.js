@@ -131,6 +131,8 @@ function goAward(whichAward) {
         $("#ModalCheck").find("#textExchange").hide();
         $("#ModalCheck").find(".btn.register").hide();
         $("#ModalCheck").find(".btn.exchange").hide();
+        $("#ModalConfirm").find(".btn.register").hide();
+        $("#ModalConfirm").find(".btn.exchange").hide();
         $("#ModalCheck").find("#coin-not").show();
         $(".coin").find("span").text(coinAmount);
         console.log("登入狀態:" + loginStatus + "，硬幣數量：" + coinAmount);
@@ -144,9 +146,11 @@ function goAward(whichAward) {
         if(whichAward=="Register"){
             $("#ModalCheck").find("#textRegister").show();
             $("#ModalCheck").find(".btn.register").show();
+            $("#ModalConfirm").find(".btn.register").show();
         }else{
             $("#ModalCheck").find("#textExchange").show();
             $("#ModalCheck").find(".btn.exchange").show();
+            $("#ModalConfirm").find(".btn.exchange").show();
         }
         console.log("登入狀態:" + loginStatus + "，硬幣數量：" + coinAmount);
 

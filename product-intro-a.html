@@ -160,7 +160,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-8 col-lg-6">
-                            <div class="product-info">
+                            <div class="product-info production-register">
                                 <div class="product-header">
                                     <h4 class="company-name">聖瑟琳專業保養品</h4>
                                     <h4 class="product-name">DiVi4乳霜禮盒</h4>
@@ -169,8 +169,8 @@
                                     <h5 class="market-price">市價：NT$<span>5,000</span>元</h5>
                                     <mark>
                                         <p class="qty needs-coin">所花費：<span>1</span>枚</p>
-                                        <p class="qty product-amount">獎項剩餘：<span>4</span></p>
-                                        <p class="qty product-total">獎項總數：<span>4</span></p>
+                                        <p class="qty product-amount" id="productAmount">登記數量：<span>20</span></p>
+                                        <p class="qty product-total" id="productTotal">獎項總數：<span>30</span></p>
                                     </mark>
                                     <div class="product-text">
                                         品牌：聖瑟琳專業保養品
@@ -191,7 +191,7 @@
                                     <a href="#" class="btn register" href="javascript:;" onclick="goAward('Register');" data-toggle="modal" data-target="#ModalCheck">立即登記</a>
                                 </div>
                                 <div class="series-exchange">
-                                    <div class="select-container">
+                                    <!--<div class="select-container">
                                         <div class="select-btn" id="select-val">兌換數量</div>
                                         <div class="options">
                                             <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：1')">兌換數量：1</a>
@@ -199,7 +199,7 @@
                                             <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：3')">兌換數量：3</a>
                                             <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：4')">兌換數量：4</a>
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <a class="btn exchange" href="javascript:;" onclick="goAward('Exchange');" data-toggle="modal" data-target="#ModalCheck">立即兌換</a>
                                 </div>
                                 <a class="btn login" href="javascript:;"  onclick="goLogin();goCheck('goRegister');">立即登入</a>
@@ -413,7 +413,7 @@
                     <div class="modal-body">
                         <div id="registerOk">
                             您已成功登記抽獎活動，以下是您參與的抽獎獎品：<br/>
-                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>，<br/> 請填寫基本資料，以利後續獎品寄送。
+                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>。
                         </div>
                         <div id="exchangeOk">
                             您已成功申請登記<br/>
@@ -422,7 +422,8 @@
                     </div>
                     <div class="modal-footer">
                         <a class="btn btn-secondary btn-leave" data-dismiss="modal">稍後填寫</a>
-                        <a href="record.html#recipient" class="btn btn-primary">填寫資料</a>
+                        <a href="record.html" class="btn register">獎項紀錄</a>
+                        <a href="record.html#recipient" class="btn exchange">填寫資料</a>
                     </div>
                 </div>
             </div>

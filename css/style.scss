@@ -125,7 +125,10 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding:0;
+        padding:0 15px;
+        @include sm{
+            padding:0;
+        }
     }
     h6.modal-title{
         font-size: 35px;
@@ -141,9 +144,12 @@ body {
         text-align: center;
         img{
             text-align: center;
-            width: 25%;
+            width: 60%;
             display: block;
             margin:auto auto 0;
+            @include sm{
+                width: 25%;
+            }
         }
         figcaption{
             display: inline-block;
@@ -1102,6 +1108,7 @@ body #index {
             left:50%;
             top:50%;
             transform: translate(-50%, -50%);
+            display: none;
         }
     }
     & .box-base{
@@ -1745,7 +1752,7 @@ main{
                     font-size: 21px;
                     width: 70%;
                     margin: 3px 15%;
-                    text-align: left;
+                    text-align: center;
                     span{
                         font-size: 16px;
                         margin: auto 3px;
@@ -1754,7 +1761,6 @@ main{
                         font-size: 20px;
                         width: calc(100% / 3);
                         margin: 3px 0;
-                        text-align: center;
                         span{
                             font-size: 18px;
                         }
@@ -1763,7 +1769,6 @@ main{
                         font-size: 20px;
                         width: calc(100% / 3);
                         margin: 3px 0;
-                        text-align: center;
                         span{
                             font-size: 16px;
                         }
@@ -2620,10 +2625,13 @@ main{
                 font-size: 25px;
                 font-weight: 700;
                 & .input-group-prepend{
-                    width: 25%;
+                    width: 30%;
                     text-align: center;
                     justify-content: center;
                     align-items: stretch;
+                    @include sm{
+                        width: 25%;
+                    }
                     & span{
                         border-radius: 0;
                         width: 100%;
@@ -2837,29 +2845,32 @@ main.product {
             .qty {
                 display: inline-block;
                 margin-bottom: 0;
-                width: calc(100% / 3);
+                width: calc(100% / 2);
                 color: #f2bd2e;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 1.2;
                 @include md{
-                    width: calc(100% / 3);
+                    width: calc(100% / 2);
                     font-size: 20px;
                     line-height: 1.2;
                 }
                 @include xl{
-                    width: calc(100% / 3);
+                    width: calc(100% / 2);
                     font-size: 25px;
                     line-height: 1.4;
                 }
-                &.needs-coin{
-                    width: calc(100% / 3);
-                    @include md{
-                        width: calc(100% / 3);
-                    }
-                    @include lg{
-                        width:100%;
-                    }
+            }
+            .product-total{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                color:#ffffff;
+                @include md{
+                    font-size: 17px;
+                }
+                @include xl{
+                    font-size: 18px;
                 }
             }
             .product-text{

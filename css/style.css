@@ -110,7 +110,14 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0;
+  padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+  .modal .modal-body {
+    /* 576px 以上*/
+    padding: 0;
+  }
 }
 
 .modal h6.modal-title {
@@ -130,9 +137,16 @@ body {
 
 .modal figure img {
   text-align: center;
-  width: 25%;
+  width: 60%;
   display: block;
   margin: auto auto 0;
+}
+
+@media (min-width: 576px) {
+  .modal figure img {
+    /* 576px 以上*/
+    width: 25%;
+  }
 }
 
 .modal figure figcaption {
@@ -1552,6 +1566,7 @@ body #index .bg-decorate .corner-bottom.corner-right {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  display: none;
 }
 
 #main-index .box-base {
@@ -2566,7 +2581,7 @@ main section .section-area .box-bottom .call-phone {
   font-size: 21px;
   width: 70%;
   margin: 3px 15%;
-  text-align: left;
+  text-align: center;
 }
 
 main section .section-area .box-bottom .call-phone span {
@@ -2580,7 +2595,6 @@ main section .section-area .box-bottom .call-phone span {
     font-size: 20px;
     width: calc(100% / 3);
     margin: 3px 0;
-    text-align: center;
   }
   main section .section-area .box-bottom .call-phone span {
     font-size: 18px;
@@ -2593,7 +2607,6 @@ main section .section-area .box-bottom .call-phone span {
     font-size: 20px;
     width: calc(100% / 3);
     margin: 3px 0;
-    text-align: center;
   }
   main section .section-area .box-bottom .call-phone span {
     font-size: 16px;
@@ -3854,7 +3867,7 @@ main section .record-input .input-group {
 }
 
 main section .record-input .input-group .input-group-prepend {
-  width: 25%;
+  width: 30%;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -3862,6 +3875,13 @@ main section .record-input .input-group .input-group-prepend {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+@media (min-width: 576px) {
+  main section .record-input .input-group .input-group-prepend {
+    /* 576px 以上*/
+    width: 25%;
+  }
 }
 
 main section .record-input .input-group .input-group-prepend span {
@@ -4169,7 +4189,7 @@ main.product .product-a .product-info mark {
 main.product .product-a .product-info .qty {
   display: inline-block;
   margin-bottom: 0;
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   color: #f2bd2e;
   font-weight: 700;
   font-size: 16px;
@@ -4179,7 +4199,7 @@ main.product .product-a .product-info .qty {
 @media (min-width: 768px) {
   main.product .product-a .product-info .qty {
     /* 768px 以上 */
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     font-size: 20px;
     line-height: 1.2;
   }
@@ -4188,27 +4208,30 @@ main.product .product-a .product-info .qty {
 @media (min-width: 1200px) {
   main.product .product-a .product-info .qty {
     /* 1200px 以上 */
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     font-size: 25px;
     line-height: 1.4;
   }
 }
 
-main.product .product-a .product-info .qty.needs-coin {
-  width: calc(100% / 3);
+main.product .product-a .product-info .product-total {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
-  main.product .product-a .product-info .qty.needs-coin {
+  main.product .product-a .product-info .product-total {
     /* 768px 以上 */
-    width: calc(100% / 3);
+    font-size: 17px;
   }
 }
 
-@media (min-width: 992px) {
-  main.product .product-a .product-info .qty.needs-coin {
-    /* 992px 以上 */
-    width: 100%;
+@media (min-width: 1200px) {
+  main.product .product-a .product-info .product-total {
+    /* 1200px 以上 */
+    font-size: 18px;
   }
 }
 
