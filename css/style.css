@@ -1801,7 +1801,11 @@ body #index .bg-decorate .corner-bottom.corner-right {
   }
 }
 
-#main-index .box-base .button-area img[src$="-h.png"] {
+#main-index .box-base .button-area img[src$="-y-h.png"] {
+  display: none;
+}
+
+#main-index .box-base .button-area img[src$="-y.png"] {
   display: none;
 }
 
@@ -1826,20 +1830,20 @@ body #index .bg-decorate .corner-bottom.corner-right {
   transition: all .5s;
 }
 
-#main-index .box-base .button-area a:hover img[src$="-h.png"] {
+#main-index .box-base .button-area a:hover img[src$="-y.png"] {
   display: none;
   opacity: 1;
 }
 
 @media (min-width: 576px) {
-  #main-index .box-base .button-area a:hover img[src$="-h.png"] {
+  #main-index .box-base .button-area a:hover img[src$="-y.png"] {
     /* 576px 以上*/
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  #main-index .box-base .button-area a:hover img[src$="-h.png"] {
+  #main-index .box-base .button-area a:hover img[src$="-y.png"] {
     /* 768px 以上 */
     display: block;
   }
@@ -1849,6 +1853,44 @@ body #index .bg-decorate .corner-bottom.corner-right {
   border: 4px solid #ffffff;
   background-color: #050761;
   color: #ffffff;
+}
+
+#main-index .box-base .button-area a:active img[src$="-y.png"] {
+  display: none;
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  #main-index .box-base .button-area a:active img[src$="-y.png"] {
+    /* 576px 以上*/
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-index .box-base .button-area a:active img[src$="-y.png"] {
+    /* 768px 以上 */
+    display: none;
+  }
+}
+
+#main-index .box-base .button-area a:active img[src$="-y-h.png"] {
+  display: none;
+  opacity: 1;
+}
+
+@media (min-width: 576px) {
+  #main-index .box-base .button-area a:active img[src$="-y-h.png"] {
+    /* 576px 以上*/
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-index .box-base .button-area a:active img[src$="-y-h.png"] {
+    /* 768px 以上 */
+    display: block;
+  }
 }
 
 #main-index .box-base .button-area a span {
@@ -2680,14 +2722,13 @@ main section .section-area .section-block .qa-accordion .card-body {
   font-size: 14px;
   font-weight: 400;
   line-height: 2;
-  padding: 15px 30px;
+  padding: 0;
 }
 
 @media (min-width: 576px) {
   main section .section-area .section-block .qa-accordion .card-body {
     /* 576px 以上*/
     font-size: 15px;
-    padding: 15px 30px;
   }
 }
 
@@ -2695,7 +2736,6 @@ main section .section-area .section-block .qa-accordion .card-body {
   main section .section-area .section-block .qa-accordion .card-body {
     /* 768px 以上 */
     font-size: 16px;
-    padding: 18px 35px;
   }
 }
 
@@ -2703,7 +2743,6 @@ main section .section-area .section-block .qa-accordion .card-body {
   main section .section-area .section-block .qa-accordion .card-body {
     /* 992px 以上 */
     font-size: 18px;
-    padding: 20px 40px;
   }
 }
 
@@ -2711,7 +2750,6 @@ main section .section-area .section-block .qa-accordion .card-body {
   main section .section-area .section-block .qa-accordion .card-body {
     /* 1200px 以上 */
     font-size: 18px;
-    padding: 20px 40px;
   }
 }
 
@@ -2721,6 +2759,38 @@ main section .section-area .section-block .qa-accordion .card-body ol {
 
 main section .section-area .section-block .qa-accordion .card-body ol li {
   margin-left: -1.2rem;
+}
+
+main section .section-area .section-block .qa-accordion .card-body .accordion-content {
+  padding: 15px 30px;
+}
+
+@media (min-width: 576px) {
+  main section .section-area .section-block .qa-accordion .card-body .accordion-content {
+    /* 576px 以上*/
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  main section .section-area .section-block .qa-accordion .card-body .accordion-content {
+    /* 768px 以上 */
+    padding: 18px 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  main section .section-area .section-block .qa-accordion .card-body .accordion-content {
+    /* 992px 以上 */
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main section .section-area .section-block .qa-accordion .card-body .accordion-content {
+    /* 1200px 以上 */
+    padding: 20px 40px;
+  }
 }
 
 main section .section-area .section-block .info-text {
