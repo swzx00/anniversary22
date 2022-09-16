@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-style.css">
+    <link rel="stylesheet" href="css/gotop.css">
+    <title>獎項介紹-1111週年慶│幸運一把抓</title>
+</head>
+
+<body>
+    <div class="product-intro" id="product-intro">
+        <!-- Nav START -->
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Navbar START-->
+                        <div class="col-12 col-lg-12">
+                            <div class="navbar navbar-expand-lg">
+                                <!-- Navbar MobileHumberger START -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-m" aria-controls="navbar-m" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- Navbar MobileHumberger END -->
+                                <!-- Navbar PC START -->
+                                <div class="collapse navbar-collapse" id="navbar-m">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" title="首頁" alt="首頁" style="background-image:url('images/btn-index-a.png') ;">
+                                                <span>首　　頁</span>
+                                                <img src="images/btn-index.png" title="首頁" alt="首頁" />
+                                                <img src="images/btn-index-h.png"  title="首頁" alt="首頁" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="directions.html" title="活動說明" alt="活動說明" style="background-image:url('images/btn-directions-a.png') ;">
+                                                <span>活動說明</span>
+                                                <img src="images/btn-directions.png" title="活動說明" alt="活動說明" />
+                                                <img src="images/btn-directions-h.png" title="活動說明" alt="活動說明" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="awards.html" title="活動獎項" alt="活動獎項" style="background-image:url('images/btn-awards-a.png') ;">
+                                                <span>活動獎項</span>
+                                                <img src="images/btn-awards.png" title="活動獎項" alt="活動獎項" />
+                                                <img src="images/btn-awards-h.png" title="活動獎項" alt="活動獎項" />
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="record.html" title="獎項紀錄" alt="獎項紀錄" style="background-image:url('images/btn-record-a.png') ;">
+                                                <span>獎項紀錄</span>
+                                                <img src="images/btn-record.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <img src="images/btn-record-h.png" title="獎項紀錄" alt="獎項紀錄" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="announcement.html" title="得獎公告" alt="得獎公告" style="background-image:url('images/btn-announcement-a.png') ;">
+                                                <span>得獎公告</span>
+                                                <img src="images/btn-announcement.png" title="得獎公告" alt="得獎公告" />
+                                                <img src="images/btn-announcement-h.png" title="得獎公告" alt="得獎公告" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nav-login">
+                                            <a class="nav-link" id="login"  href="https://recruit.1111.com.tw/dLoginOnly.aspx" target="_blank" onclick="goLogin();goCheck('goExchange');" title="登入" alt="登入" style="background-image:url('images/btn-login-a.png') ;">
+                                                <span>登　　入</span>
+                                                <img src="images/btn-login.png" title="登入" alt="登入" />
+                                                <img src="images/btn-login-h.png" title="登入" alt="登入" />
+                                            </a>
+                                            <a class="nav-link" id="logout" href="javascript:;" onclick="goLogout();" title="登出" alt="登出" style="background-image:url('images/btn-logout-a.png') ;">
+                                                <span>登　　出</span>
+                                                <img src="images/btn-logout.png" title="登出" alt="登出" />
+                                                <img src="images/btn-logout-h.png" title="登出" alt="登出" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Navbar PC END -->
+                                <div class="coin">
+                                    <a>金幣數：</a>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Navbar END-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav END -->
+
+        <!-- Header START -->
+        <header class="container-fluid">
+            <div class="row">
+                <img src="images/header.jpg" title="1111週年慶│幸運1把抓" alt="1111週年慶│幸運1把抓" />
+            </div>
+        </header>
+        <!-- Header END -->
+
+        <!--Main START -->
+        <main class="container-fluid product" id="main-product">
+            <!--Marquee START-->
+            <div class="row">
+                <div class="container marquee-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="marquee">
+                                <div class="marquee-title">&nbsp;</div>
+                                <div class="marquee-time" id="countdown">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marquee END-->
+            <div class=row>
+                <!--Breadcrumb START -->
+                <section class="container breadcrumb-area">
+                    <div class="row">
+                        <div class="breadcrumb-box">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                                <li class="breadcrumb-item"><a href="awards.html">活動獎項</a></li>
+                                <li class="breadcrumb-item"><a href="awards.html?tab=1">金幣選好禮</a></li>
+                                <li class="breadcrumb-item active">COZY激速紅薑黃</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <!--Breadcrumb END -->
+
+                <!-- 獎品說明 標題 START -->
+                <section class="container product-title">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-e-01.png');">獎項說明</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 獎品說明 標題 END -->
+
+                <!-- 獎品說明 區域 START -->
+                <section class="container product-a">
+                    <div class="row justify-content-start align-items-stretch">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-6">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/AwardsPic_81.jpg?637988289130053563" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h4 class="company-name">COZY</h4>
+                                    <h4 class="product-name">COZY激速紅薑黃</h4>
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="market-price">市價：NT$<span>1,500</span>元</h5>
+                                    <mark>
+                                        <p class="qty needs-coin">所花費：<span>2</span>枚</p>
+                                        <p class="qty product-amount">獎項剩餘：<span>55</span></p>
+                                        <p class="qty product-total">獎項總數：<span>60</span></p>
+                                    </mark>
+                                    <div class="product-text">
+                                        <ul>
+                                            <li>本獎項限換1次，換完為止</li>
+                                            <li>台灣高品質嚴選培育紅薑黃</li>
+                                            <li>增強體力、精神旺盛</li>
+                                            <li>促進新陳代謝，調整體質</li>
+                                            <li>激速紅薑黃無添加複方成份，使用100%純正紅薑黃原料，不使用薑黃萃取物。</li>
+                                        </ul>
+                                        保存期限：2023/08/13
+                                    </div>
+                                    <p class="remind">請記得至「<a href="record.html#recipient">獎項記錄</a>」頁面，登錄您的領取資料喔！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn-series" id="productBtn">
+                                <div class="series-register">
+                                    <a href="#" class="btn register" href="javascript:;" onclick="goAward('Register');" data-toggle="modal" data-target="#ModalCheck">立即登記</a>
+                                </div>
+                                <div class="series-exchange">
+                                    <div class="select-container">
+                                        <div class="select-btn" id="select-val">兌換數量</div>
+                                        <div class="options">
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：1')">兌換數量：1</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：2')">兌換數量：2</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：3')">兌換數量：3</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：4')">兌換數量：4</a>
+                                        </div>
+                                    </div>
+                                    <a class="btn exchange" href="javascript:;" onclick="goAward('Exchange');" data-toggle="modal" data-target="#ModalCheck">立即兌換</a>
+                                </div>
+                                <a class="btn login" href="javascript:;"  onclick="goLogin();goCheck('goExchange');">立即登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 獎品說明 區域 END -->
+
+                <!-- 形象大圖 區域 START -->
+                <section class="container-fluid product-b d-none">
+                    <div class="row align-items-start">
+                        <div class="col-12">
+                            <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oBigPic_81.jpg?637988289130053563" />
+                        </div>
+                    </div>
+                </section>
+                <!-- 形象大圖 區域 END -->
+
+                <!-- 企業簡介 區域 START -->
+                <section class="container product-c d-none">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="company-profile">
+                                <div class="profile-title">
+                                    <h4 class="company-title">健康為您講究，打造質感生活</h4>
+                                </div>
+                                <p class="profile-text">
+                                    COZY雖然是新創品牌，但在產品上的選擇絕對不馬虎。 COZY成立至今已經一年，支持我們的人也破萬人，由衷的感謝您們，在未來的日子依舊會保持著「好的成分多添加，沒用的成分不添加」。COZY以理念創新為起點，以顧客感受為出發點，努力達到客人最滿意的結果，不論是吃的用的都讓您有高質感的享受，服務、成分、品質絕對給您最好的。秉持著熱忱的心服務顧客，有了顧客的信任與支持我們才能永續經營。 近年保健意識抬頭，身邊所有的親朋好友都在吃「保健食品」。 為什麼我們要吃保健食品呢?因為現代人的工作壓力大、低頭族、外食族等等，導致營養不均衡、多坐少動、代謝差，所以才需要保健食品來幫您補充不足的地方。所以COZY就研發出了各項保健食品，成分幫您嚴格把關，來幫助您補充流失的營養。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 企業簡介 區域 END -->
+
+                <!-- 推薦商品 區域 START -->
+                <section class="container product-d d-none">
+                    <div class="row align-items-start">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts1_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts2_81.jpg?637988289130053563" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts3_81.jpg?637988289130053563" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 推薦商品 區域 END -->
+
+                <!-- 品牌情報A 區域 START -->
+                <section class="container product-e d-none">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="text-area">
+                                <h4 class="content-title">保健食品百百種，COZY幫您嚴格把關成分、品質絕對給您最好的</h4>
+                                <p class="text-content">
+                                    COZY的薑黃採用比其他薑黃都高出74倍的紅薑黃、特殊專利技術萃取，讓大家可以迅速補充所需的營養。 年底工作大爆炸、沒有時間休息的人類們，COZY激速紅薑黃是你最好的選擇， 不吃美食就活不下去的朋友們，推薦你們試試 COZY纖體麗型發酵紅薑黃。 使用經專利發酵過後的日本紅薑黃，其中還包含決明子、蘋果纖維、鳳梨酵素萃取，除了本身含有大量薑黃素，其他營養也一次滿足。 而我們美妍聚膠 膠原蛋白胜肽，嚴選自法國naticol百年專業歷史大廠之專利魚膠原蛋白胜肽以及Hyabest®日本頂級玻尿酸，讓您由內而外都完美保養
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報A 區域 END -->
+
+                <!-- 品牌情報B 區域 START -->
+                <section class="container product-f d-none">
+                    <div class="row justify-content-stretch align-items-stretch">
+                        <div class="col-self img-slide">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oInterviewPic2_81.jpg?637988289130053563" />
+                            </div>
+                        </div>
+                        <div class="col-self text-slide">
+                            <div class="text-area">
+                                <h4 class="text-left content-title">COZY纖體麗型</h4>
+                                <p class="text-content">
+                                    COZY纖體麗型發酵紅薑黃 這款薑黃選擇使用日本專利發酵紅薑黃，複方包含決明子、蘋果纖維、鳳梨酵素萃取，除了本身含有大量薑黃素，其他營養也一次滿足，推薦給想保養身材、維持最佳體態朋友們！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報B 區域 END -->
+
+                <!-- 品牌情報C 區域 START -->
+                <section class="container product-g d-none">
+                    <div class="row align-items-stretch">
+                        <div class="col-self order-1 order-sm-1 order-md-2 order-lg-2 img-slide">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oInterviewPic3_81.jpg?637988289130053563" />
+                            </div>
+                        </div>
+                        <div class="col-self order-2 order-sm-2 order-md-1 order-lg-1 text-slide">
+                            <div class="text-area">
+                                <h4 class="text-left content-title">COZY美妍聚膠 膠原蛋白胜肽</h4>
+                                <p class="text-content">
+                                    管制鬆綁後，你是否也把握抓住夏天尾巴的出遊機會？ 被悶久了，難免會想出們走走，但炎炎夏日，紫外線導致皮膚乾燥、曬傷，甚至出現曬斑！ 除了出遊前的防護措施很重要，旅途中要多喝水，大量補充水份，外在可以使用保濕防曬產品，內在保養該怎麼做呢❓ 很多人都忽略，但這卻是保持水噹噹的關鍵❤️ ✨美妍聚膠三大亮點✨ ✅高純度玻尿酸達95% ✅0脂肪、低熱量 ✅水溶特性、人體能夠完全吸收 ✨富含多種營養元素✨
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報C 區域 END -->
+
+                <!-- 置底BN 區域 START -->
+                <section class="container-fluid product-h d-none">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#" target="_blank">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oBanner_81.jpg?637988289130053563" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 置底BN 區域 END -->
+            </div>
+
+            <!--Corner START-->
+            <div class="bg-corner corner-top corner-left"></div>
+            <div class="bg-corner corner-top corner-right"></div>
+            <div class="bg-corner corner-bottom corner-left"></div>
+            <div class="bg-corner corner-bottom corner-right"></div>
+            <!--Corner END-->
+        </main>
+        <!--Main END -->
+
+        <!-- Footer START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="footer-text text-center">
+                        全球華人股份有限公司版權所有&copy;2022&nbsp;1111 Job Bank All Rights Reserved.
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;" class="share-fb" onclick="fb_click();" title="分享至FB" alt="分享至FB">
+                            <img src="images/share-fb.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-h.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-a.png" title="分享至FB" alt="分享至FB"/>
+                        </a>
+                        <a href="javascript:;" class="share-ig" onclick="ig_click();" title="分享至IG" alt="分享至IG">
+                            <img src="images/share-ig.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-h.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-a.png" title="分享至IG" alt="分享至IG"/>
+                        </a>
+                        <a href="javascript:;" class="share-line" onclick="line_click();" title="分享至Line" alt="分享至Line">
+                            <img src="images/share-line.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-h.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-a.png" title="分享至Line" alt="分享至Line"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+
+        <!-- Check Modal START -->
+        <div class="modal fade" id="ModalCheck" tabindex="-1" role="dialog" aria-labelledby="ModalCheckTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="ModalCheckTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="coin-not">
+                            唉喲！您目前擁有的硬幣數量不足呦！
+                        </div>
+                        <div id="awardCheck">
+                            您目前尚有&nbsp;
+                            <div class="red-font"><span id="coin-count">0</span>枚&nbsp;</div>硬幣。<br/> 請問是否消耗&nbsp;
+                            <div class="red-font">2枚</div>&nbsp;硬幣，<br/>
+                            <div id="textRegister">
+                                登記<b class="red-font">淨呼吸極淨型空氣清淨機</b>的抽獎活動呢?<br/>
+                                <small>(將於2023年2月3日抽出得獎者，2月10日前公告得獎名單。)</small>
+                            </div>
+                            <div id="textExchange">
+                                兌換<b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>呢?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary btn-leave" data-dismiss="modal">離開</a>
+                        <a class="btn btn-primary register" data-toggle="modal" data-target="#ModalConfirm" data-dismiss="modal" onclick="confirm('RegisterOk');">登記</a>
+                        <a class="btn btn-primary exchange" data-toggle="modal" data-target="#ModalConfirm" data-dismiss="modal" onclick="confirm('ExchangeOk');">兌換</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Check Modal END -->
+        <!-- Confirm Modal START -->
+        <div class="modal fade" id="ModalConfirm" tabindex="-1" role="dialog" aria-labelledby="ModalConfirmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="ModalCheckTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="registerOk">
+                            您已成功登記抽獎活動，以下是您參與的抽獎獎品：<br/>
+                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>，<br/> 請填寫基本資料，以利後續獎品寄送。
+                        </div>
+                        <div id="exchangeOk">
+                            您已成功兌換<br/>
+                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>，<br/> 請填寫基本資料，以利後續獎品寄送。
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary btn-leave" data-dismiss="modal">稍後填寫</a>
+                        <a href="record.html#recipient" class="btn btn-primary">填寫資料</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Confirm Modal END -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- 倒數計時器 START -->
+    <script src="js/countdown.js"></script>
+    <!-- 倒數計時器 END -->
+
+
+    <!-- Style START -->
+    <script src="js/style.js"></script>
+    <!-- Style START -->
+
+
+    <!-- GoTop START -->
+    <div id="BackTop">
+        <button type="button" class="toTop-arrow"></button>
+        <a href="#" target="_blank" class="qa">問卷調查</a>
+    </div>
+    <script src="js/gotop.js "></script>
+    <!-- GoTop END -->
+
+    <!-- Login-Demo START -->
+    <script src="js/login-demo.js"></script>
+    <!-- Login-Demo END -->
+
+</body>
+
+</html>

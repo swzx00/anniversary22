@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-style.css">
+    <link rel="stylesheet" href="css/gotop.css">
+    <title>獎項紀錄-1111週年慶│幸運一把抓</title>
+</head>
+
+<body>
+    <div id="record">
+        <!-- Nav START -->
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Navbar START-->
+                        <div class="col-12 col-lg-12">
+                            <div class="navbar navbar-expand-lg">
+                                <!-- Navbar MobileHumberger START -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-m" aria-controls="navbar-m" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- Navbar MobileHumberger END -->
+                                <!-- Navbar PC START -->
+                                <div class="collapse navbar-collapse" id="navbar-m">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" title="首頁" alt="首頁" style="background-image:url('images/btn-index-a.png') ;">
+                                                <span>首　　頁</span>
+                                                <img src="images/btn-index.png" title="首頁" alt="首頁" />
+                                                <img src="images/btn-index-h.png"  title="首頁" alt="首頁" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="directions.html" title="活動說明" alt="活動說明" style="background-image:url('images/btn-directions-a.png') ;">
+                                                <span>活動說明</span>
+                                                <img src="images/btn-directions.png" title="活動說明" alt="活動說明" />
+                                                <img src="images/btn-directions-h.png" title="活動說明" alt="活動說明" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="awards.html" title="活動獎項" alt="活動獎項" style="background-image:url('images/btn-awards-a.png') ;">
+                                                <span>活動獎項</span>
+                                                <img src="images/btn-awards.png" title="活動獎項" alt="活動獎項" />
+                                                <img src="images/btn-awards-h.png" title="活動獎項" alt="活動獎項" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="record.html" title="獎項紀錄" alt="獎項紀錄" style="background-image:url('images/btn-record-a.png') ;">
+                                                <span>獎項紀錄</span>
+                                                <img src="images/btn-record.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <img src="images/btn-record-h.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="announcement.html" title="得獎公告" alt="得獎公告" style="background-image:url('images/btn-announcement-a.png') ;">
+                                                <span>得獎公告</span>
+                                                <img src="images/btn-announcement.png" title="得獎公告" alt="得獎公告" />
+                                                <img src="images/btn-announcement-h.png" title="得獎公告" alt="得獎公告" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nav-login">
+                                            <a class="nav-link" id="login"  href="https://recruit.1111.com.tw/dLoginOnly.aspx" target="_blank" onclick="goLogin();" title="登入" alt="登入" style="background-image:url('images/btn-login-a.png') ;">
+                                                <span>登　　入</span>
+                                                <img src="images/btn-login.png" title="登入" alt="登入" />
+                                                <img src="images/btn-login-h.png" title="登入" alt="登入" />
+                                            </a>
+                                            <a class="nav-link" id="logout" href="javascript:;" onclick="goLogout();" title="登出" alt="登出" style="background-image:url('images/btn-logout-a.png') ;">
+                                                <span>登　　出</span>
+                                                <img src="images/btn-logout.png" title="登出" alt="登出" />
+                                                <img src="images/btn-logout-h.png" title="登出" alt="登出" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Navbar PC END -->
+                                <div class="coin">
+                                    <a>金幣數：</a>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Navbar END-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav END -->
+
+        <!-- Header START -->
+        <header class="container-fluid">
+            <div class="row">
+                <img src="images/header.jpg" title="1111週年慶│幸運1把抓" alt="1111週年慶│幸運1把抓" />
+            </div>
+        </header>
+        <!-- Header END -->
+
+        <!--Main START -->
+        <main class="container-fluid" id="main-record">
+            <!--Marquee START-->
+            <div class="row">
+                <div class="container marquee-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="marquee">
+                                <div class="marquee-title">&nbsp;</div>
+                                <div class="marquee-time" id="countdown">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marquee END-->
+            <div class=row>
+                <section class="container logout-state" id="viewTitle">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area record-title">
+                                <h3 class="section-title" style="background-image: url('images/title-c-00.png');">獎項紀錄</h3>
+                                <div class="login-block">
+                                    <a class="btn" href="#view" onclick="goLogin();" data-toggle="collapse" id="viewlogin" title="登入" alt="登入">立即登入查詢</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="container collapse-area collapse" id="view">
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="section-area record-title">
+                                <h3 class="section-title" style="background-image: url('images/title-c-01.png');">獎項紀錄 公司名稱</h3>
+                            </div>
+                            <div class="record-company">
+                                <span>1111人力銀行(全球華人股份有限公司)</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="section-area record-title">
+                                <h3 class="section-title" style="background-image: url('images/title-c-02.png');">登記抽大獎 獎項紀錄</h3>
+                            </div>
+                            <table class="table-area table-a">
+                                <thead>
+                                    <tr>
+                                        <th>登記時間</th>
+                                        <th>登記獎項</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="d-flex">
+                                    <tr>
+                                        <td>09/13</td>
+                                        <td><a href="product-intro-b.html" title="iPhone 14" alt="iPhone 14">iPhone 14</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09/14</td>
+                                        <td><a href="product-intro-b.html" title="iPhone 14 Pro" alt="iPhone 14 Pro">iPhone 14 Pro</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>09/15</td>
+                                        <td><a href="product-intro-b.html" title="iPhone 14 Pro Max" alt="iPhone 14 Pro Max">iPhone 14 Pro Max</a></td>
+                                    </tr>
+                                </tbody>
+                                <!--
+                                    若tbody有獎項內容，
+                                    tbody的class="d-flex"(tbody顯示)，
+                                    tfoot的class="d-none"(tfoot不顯示)。
+                                    若tbody無獎項內容，
+                                    tbody的class="d-none"(tbody不顯示)，
+                                    tfoot的class="d-flex"(tfoot顯示)。
+                                -->
+                                <tfoot class="d-none">
+                                    <tr>
+                                        <td colspan="2">目前尚未擁有獎項！</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-12">
+                            <div class="section-area record-title">
+                                <h3 class="section-title" style="background-image: url('images/title-c-03.png');">選好禮 獎項紀錄</h3>
+                            </div>
+                            <table class="table-area table-b">
+                                <thead>
+                                    <tr>
+                                        <th>兌獎時間</th>
+                                        <th>兌獎獎項</th>
+                                        <th>獎項數量</th>
+                                        <th>兌獎說明</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="d-flex">
+                                    <tr>
+                                        <td>09/16</td>
+                                        <td><a href="product-intro-b.html" title="iPhone 13" alt="iPhone 13">日本 BRUNO 上掀式水蒸氣循環燒烤箱(紅色)</a></td>
+                                        <td>1</td>
+                                        <td>未處理</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09/17</td>
+                                        <td><a href="product-intro-b.html" title="Samsung Galaxy Buds 真無線藍芽耳機" alt="Samsung Galaxy Buds 真無線藍芽耳機">Samsung Galaxy Buds 真無線藍芽耳機</a></td>
+                                        <td>2</td>
+                                        <td>處理中</td>
+                                    </tr>
+                                    <tr>
+                                        <td>09/18</td>
+                                        <td><a href="product-intro-b.html" title="紅利點數" alt="紅利點數">紅利點數</a></td>
+                                        <td>3</td>
+                                        <td>已處理</td>
+                                    </tr>
+                                </tbody>
+                                <!--
+                                    若tbody有獎項內容，
+                                    tbody的class="d-flex"(tbody顯示)，
+                                    tfoot的class="d-none"(tfoot不顯示)。
+                                    若tbody無獎項內容，
+                                    tbody的class="d-none"(tbody不顯示)，
+                                    tfoot的class="d-flex"(tfoot顯示)。
+                                -->
+                                <tfoot class="d-none">
+                                    <tr>
+                                        <td colspan="4">目前尚未擁有獎項！</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </section>
+                    <section class="row" id="recipient">
+                        <div class="col-12">
+                            <div class="section-area record-title">
+                                <h3 class="section-title" style="background-image: url('images/title-c-04.png');">收件人資訊</h3>
+                            </div>
+                            <div class="record-input">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">收件人姓名</span>
+                                    </div>
+                                    <input placeholder="請輸入收件人姓名" type="text" class="form-control" aria-label="收件人姓名"/>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">郵遞區號</span>
+                                    </div>
+                                    <input placeholder="請輸入郵遞區號"  type="text" class="form-control" aria-label="郵遞區號"/>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">收件人地址</span>
+                                    </div>
+                                    <input placeholder="請輸入收件人地址"  type="text" class="form-control" aria-label="收件人地址"/>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">聯繫手機</span>
+                                    </div>
+                                    <input placeholder="請輸入聯繫手機"  type="text" class="form-control" aria-label="聯繫手機"/>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">聯繫email</span>
+                                    </div>
+                                    <input type="text" placeholder="請輸入聯繫email" class="form-control" aria-label="聯繫email"/>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" class="btn">儲存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-c-05.png');">得獎須知</h3>
+                                <div class="section-block">
+                                    <div class="info-text">
+                                        <ol>
+                                            <li>本活動僅限於1111人力銀行企業會員主帳號參加，若經查證帳號供第三人使用者，或資料與本人不符者，則視同放棄得獎與領獎資格。若所留之聯絡方式有誤或不齊全，致無法聯繫，均視同放棄得獎資格。</li>
+                                            <li>依中華民國稅法規定：
+                                                <ol>
+                                                    <li>獎項金額若超過新台幣1,000元，獎項所得將列入個人年度綜合所得稅申報，故得獎人需提供身份證影本，且依規定填寫並繳交相關收據方可領獎；請於2023/2/17前繳齊相關資料(郵戳為憑)，逾期視同放棄獎項；</li>
+                                                    <li>若獎項所得總額超過新台幣20,000元，得獎人應自行負擔10%之機會中獎稅，並由主辦單位依法辦理扣繳；</li>
+                                                    <li>得獎人如非屬中華民國國民，則負擔20%之機會中獎稅。以上稅法規定若不願意配合，則視為自動棄權，不具得獎資格。</li>
+                                                </ol>
+                                            </li>
+                                            <li>得獎會員資格必需真實，如有冒用偽造，視同放棄贈送資格，應返還該獎品或同等價額。</li>
+                                            <li>本辦法如有未盡事宜，1111擁有隨時修正之權利。</li>
+                                        </ol>
+                                        <p>註：如有獲得1111「2022週年慶活動」獎品，而有合約期前解約之情事時，應返還該獎品或同等價額。</p>
+                                        <ul>
+                                            <li>最後兌/抽獎截止時間：2023/1/11 23:59，</li>
+                                            <li>獎品寄件聯絡資料填寫截止時間：2023/1/18 23:59。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="download-block">
+                                    <a class="btn btn-download" href="doc/remuneration.zip" title="勞報單下載" alt="勞報單下載">勞報單下載</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--Corner START-->
+            <div class="bg-corner corner-top corner-left"></div>
+            <div class="bg-corner corner-top corner-right"></div>
+            <div class="bg-corner corner-bottom corner-left"></div>
+            <div class="bg-corner corner-bottom corner-right"></div>
+            <!--Corner END-->
+        </main>
+        <!--Main END -->
+
+        <!-- Footer START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="footer-text text-center">
+                        全球華人股份有限公司版權所有&copy;2022&nbsp;1111 Job Bank All Rights Reserved.
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;" class="share-fb" onclick="fb_click();" title="分享至FB" alt="分享至FB">
+                            <img src="images/share-fb.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-h.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-a.png" title="分享至FB" alt="分享至FB"/>
+                        </a>
+                        <a href="javascript:;" class="share-ig" onclick="ig_click();" title="分享至IG" alt="分享至IG">
+                            <img src="images/share-ig.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-h.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-a.png" title="分享至IG" alt="分享至IG"/>
+                        </a>
+                        <a href="javascript:;" class="share-line" onclick="line_click();" title="分享至Line" alt="分享至Line">
+                            <img src="images/share-line.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-h.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-a.png" title="分享至Line" alt="分享至Line"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+    </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- 倒數計時器 START -->
+        <script src="js/countdown.js"></script>
+        <!-- 倒數計時器 END -->
+        <!-- Style START -->
+        <script src="js/style.js"></script>
+        <!-- Style START -->
+
+
+        <!-- GoTop START -->
+        <div id="BackTop">
+            <button type="button" class="toTop-arrow"></button>
+            <a href="#" target="_blank" class="qa">問卷調查</a>
+        </div>
+        <script src="js/gotop.js "></script>
+        <!-- GoTop END -->
+
+        <!-- Login-Demo START -->
+        <script src="js/login-demo.js"></script>
+        <!-- Login-Demo END -->
+</body>
+
+</html>

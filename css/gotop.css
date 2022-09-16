@@ -1,0 +1,156 @@
+/* 56px */
+
+.toTop-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 100%;
+    opacity: 0.75;
+    background: rgba(255, 255, 255, .5);
+    border: 1px solid #040762;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: block;
+    z-index: 9999;
+}
+
+.toTop-arrow:hover {
+    background: rgba(255, 238, 164,.75);
+    border: 1px solid #040762;
+    transition: all .5s;
+}
+.toTop-arrow:active {
+    background-color: rgba(255, 220, 21,1);
+    border: 1px solid #040762;
+    transition: all .5s;
+}
+
+.toTop-arrow::before,
+.toTop-arrow::after {
+    width: 25px;
+    height: 7px;
+    border-radius: 3px;
+    background: #040762;
+    position: absolute;
+    content: "";
+}
+
+.toTop-arrow:hover:before,
+.toTop-arrow:hover:after {
+    background: #040762;
+    transition: all .5s;
+}
+
+.toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.6rem;
+}
+
+.toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.6rem;
+}
+
+.toTop-arrow:focus {
+    outline: none;
+}
+
+.qa {
+    z-index: 9999;
+    width: 3.5rem;
+    height: 8rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 999px;
+    opacity: .5;
+    background-color: rgba(255, 255, 255,.5);
+    color: #040762;
+    border: 1px solid #040762;
+    cursor: pointer;
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+a.qa:hover {
+    opacity: .6;
+    background-color: rgba(255, 238, 164,.75);
+    color: #040762;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a.qa:active {
+    opacity: .9;
+    background-color: rgba(255, 220, 21,1);
+    color: #040762;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+@media(min-width: 576px) {
+    .toTop-arrow {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 1rem;
+    }
+    .toTop-arrow::before,
+    .toTop-arrow::after {
+        width: 21px;
+        height: 5px;
+        border-radius: 3px;
+    }
+    .toTop-arrow::before {
+        left: 0.5rem;
+    }
+    .toTop-arrow::after {
+        right: 0.5rem;
+    }
+    .qa {
+        width: 3rem;
+        height: 7rem;
+        bottom: 4.5rem;
+        border-radius: 1rem;
+        font-weight: 1.1rem;
+    }
+}
+
+/* 40px */
+
+@media(min-width: 992px) {
+    .toTop-arrow {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 10px;
+    }
+    .toTop-arrow::before,
+    .toTop-arrow::after {
+        width: 18px;
+        height: 5px;
+        border-radius: 3px;
+    }
+    .toTop-arrow::before {
+        left: 0.5rem;
+    }
+    .toTop-arrow::after {
+        right: 0.5rem;
+    }
+    .qa {
+        width: 2.5rem;
+        height: 6.5rem;
+        bottom: 4rem;
+        border-radius: 10px;
+        font-weight: 1rem;
+    }
+}

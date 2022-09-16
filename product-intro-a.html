@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-style.css">
+    <link rel="stylesheet" href="css/gotop.css">
+    <title>獎項介紹-1111週年慶│幸運一把抓</title>
+</head>
+
+<body>
+    <div class="product-intro" id="product-intro">
+        <!-- Nav START -->
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Navbar START-->
+                        <div class="col-12 col-lg-12">
+                            <div class="navbar navbar-expand-lg">
+                                <!-- Navbar MobileHumberger START -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-m" aria-controls="navbar-m" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- Navbar MobileHumberger END -->
+                                <!-- Navbar PC START -->
+                                <div class="collapse navbar-collapse" id="navbar-m">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" title="首頁" alt="首頁" style="background-image:url('images/btn-index-a.png') ;">
+                                                <span>首　　頁</span>
+                                                <img src="images/btn-index.png" title="首頁" alt="首頁" />
+                                                <img src="images/btn-index-h.png"  title="首頁" alt="首頁" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="directions.html" title="活動說明" alt="活動說明" style="background-image:url('images/btn-directions-a.png') ;">
+                                                <span>活動說明</span>
+                                                <img src="images/btn-directions.png" title="活動說明" alt="活動說明" />
+                                                <img src="images/btn-directions-h.png" title="活動說明" alt="活動說明" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="awards.html" title="活動獎項" alt="活動獎項" style="background-image:url('images/btn-awards-a.png') ;">
+                                                <span>活動獎項</span>
+                                                <img src="images/btn-awards.png" title="活動獎項" alt="活動獎項" />
+                                                <img src="images/btn-awards-h.png" title="活動獎項" alt="活動獎項" />
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="record.html" title="獎項紀錄" alt="獎項紀錄" style="background-image:url('images/btn-record-a.png') ;">
+                                                <span>獎項紀錄</span>
+                                                <img src="images/btn-record.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <img src="images/btn-record-h.png" title="獎項紀錄" alt="獎項紀錄" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="announcement.html" title="得獎公告" alt="得獎公告" style="background-image:url('images/btn-announcement-a.png') ;">
+                                                <span>得獎公告</span>
+                                                <img src="images/btn-announcement.png" title="得獎公告" alt="得獎公告" />
+                                                <img src="images/btn-announcement-h.png" title="得獎公告" alt="得獎公告" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nav-login">
+                                            <a class="nav-link" id="login"  href="https://recruit.1111.com.tw/dLoginOnly.aspx" target="_blank" onclick="goLogin();goCheck('goRegister');" title="登入" alt="登入" style="background-image:url('images/btn-login-a.png') ;">
+                                                <span>登　　入</span>
+                                                <img src="images/btn-login.png" title="登入" alt="登入" />
+                                                <img src="images/btn-login-h.png" title="登入" alt="登入" />
+                                            </a>
+                                            <a class="nav-link" id="logout" href="javascript:;" onclick="goLogout();" title="登出" alt="登出" style="background-image:url('images/btn-logout-a.png') ;">
+                                                <span>登　　出</span>
+                                                <img src="images/btn-logout.png" title="登出" alt="登出" />
+                                                <img src="images/btn-logout-h.png" title="登出" alt="登出" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Navbar PC END -->
+                                <div class="coin">
+                                    <a>金幣數：</a>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Navbar END-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav END -->
+
+        <!-- Header START -->
+        <header class="container-fluid">
+            <div class="row">
+                <img src="images/header.jpg" title="1111週年慶│幸運1把抓" alt="1111週年慶│幸運1把抓" />
+            </div>
+        </header>
+        <!-- Header END -->
+
+        <!--Main START -->
+        <main class="container-fluid product" id="main-product">
+            <!--Marquee START-->
+            <div class="row">
+                <div class="container marquee-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="marquee">
+                                <div class="marquee-title">&nbsp;</div>
+                                <div class="marquee-time" id="countdown">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marquee END-->
+            <div class=row>
+                <!--Breadcrumb START -->
+                <section class="container breadcrumb-area">
+                    <div class="row">
+                        <div class="breadcrumb-box">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+                                <li class="breadcrumb-item"><a href="awards.html">活動獎項</a></li>
+                                <li class="breadcrumb-item"><a href="awards.html?tab=0">登記抽大獎</a></li>
+                                <li class="breadcrumb-item active">聖瑟琳專業保養品 DiVi4乳霜禮盒</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                <!--Breadcrumb END -->
+
+                <!-- 獎品說明 標題 START -->
+                <section class="container product-title">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-e-01.png');">獎項說明</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 獎品說明 標題 END -->
+
+                <!-- 獎品說明 區域 START -->
+                <section class="container product-a">
+                    <div class="row justify-content-start align-items-stretch">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-6">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/AwardsPic_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                            <div class="product-info">
+                                <div class="product-header">
+                                    <h4 class="company-name">聖瑟琳專業保養品</h4>
+                                    <h4 class="product-name">DiVi4乳霜禮盒</h4>
+                                </div>
+                                <div class="product-body">
+                                    <h5 class="market-price">市價：NT$<span>5,000</span>元</h5>
+                                    <mark>
+                                        <p class="qty needs-coin">所花費：<span>1</span>枚</p>
+                                        <p class="qty product-amount">獎項剩餘：<span>4</span></p>
+                                        <p class="qty product-total">獎項總數：<span>4</span></p>
+                                    </mark>
+                                    <div class="product-text">
+                                        品牌：聖瑟琳專業保養品
+                                        <ul>
+                                            <li>禮盒內容物：DiVi4乳霜(70ml)+胜肽玻尿酸化妝水(4.06oz)</li>
+                                            <li>DiVi4乳霜為複方天然植物精華，全方面修護調理肌膚使肌膚緊實透亮、潤澤嫩白、撫平細紋。</li>
+                                            <li>胜肽玻尿酸保濕露，多種胜肽精華使肌膚明亮光滑、保濕鎖水，改善乾燥粗糙之肌膚。</li>
+                                        </ul>
+                                        保存期限：2024/07/26
+                                    </div>
+                                    <p class="remind">請記得至「<a href="record.html#recipient">獎項記錄</a>」頁面，登錄您的領取資料喔！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="btn-series" id="productBtn">
+                                <div class="series-register">
+                                    <a href="#" class="btn register" href="javascript:;" onclick="goAward('Register');" data-toggle="modal" data-target="#ModalCheck">立即登記</a>
+                                </div>
+                                <div class="series-exchange">
+                                    <div class="select-container">
+                                        <div class="select-btn" id="select-val">兌換數量</div>
+                                        <div class="options">
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：1')">兌換數量：1</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：2')">兌換數量：2</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：3')">兌換數量：3</a>
+                                            <a href="javascript:;" class="option" onclick="onSelectChange('兌換數量：4')">兌換數量：4</a>
+                                        </div>
+                                    </div>
+                                    <a class="btn exchange" href="javascript:;" onclick="goAward('Exchange');" data-toggle="modal" data-target="#ModalCheck">立即兌換</a>
+                                </div>
+                                <a class="btn login" href="javascript:;"  onclick="goLogin();goCheck('goRegister');">立即登入</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 獎品說明 區域 END -->
+
+                <!-- 形象大圖 區域 START -->
+                <section class="container-fluid product-b">
+                    <div class="row align-items-start">
+                        <div class="col-12">
+                            <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oBigPic_86.jpg?637987630442295884" />
+                        </div>
+                    </div>
+                </section>
+                <!-- 形象大圖 區域 END -->
+
+                <!-- 企業簡介 區域 START -->
+                <section class="container product-c">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="company-profile">
+                                <div class="profile-title">
+                                    <h4 class="company-title">SanSaLin聖瑟琳專業保養品</h4>
+                                </div>
+                                <p class="profile-text">
+                                    聖瑟琳生物科技有限公司長久以來一直致力於美麗與健康並存的保養品研發，包含引進歐、美、法的沙龍保養品以及與國內外各生技大廠配合以取得先進的原料與技術等等，建立合作開發模式及產學合作關係。 聖瑟琳生物科技有限公司從產品代理，OEM再到ODM，進而到自有品牌的成立，全台1000多家通路商，多年來已經累積了許多的產品開發與製造經驗。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 企業簡介 區域 END -->
+
+                <!-- 推薦商品 區域 START -->
+                <section class="container product-d">
+                    <div class="row align-items-start">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts1_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts2_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oProducts3_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 推薦商品 區域 END -->
+
+                <!-- 品牌情報A 區域 START -->
+                <section class="container product-e">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="text-area">
+                                <h4 class="content-title">企業送禮新選擇：客製化保養品禮包組</h4>
+                                <p class="text-content">
+                                    還再煩惱要送什麼嗎？每年都要送的企業三節禮品、VIP 客戶禮品、行銷活動、公關贈禮，聖瑟琳提供「實用」「健康」「質感」的禮盒新選擇，我們有客製化服務：依照您送禮場合、對象、預算，提供最符合需求的禮品組合。如有企業購買需求，歡迎洽詢聖瑟琳的官網、LINE客服：@sansalin，將提供最高品質與優惠保養品贈禮選擇。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報A 區域 END -->
+
+                <!-- 品牌情報B 區域 START -->
+                <section class="container product-f">
+                    <div class="row justify-content-stretch align-items-stretch">
+                        <div class="col-self img-slide">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oInterviewPic2_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-self text-slide">
+                            <div class="text-area">
+                                <h4 class="text-left content-title">DiVi4乳霜：一瓶勝多瓶，全方面修護調理</h4>
+                                <p class="text-content">
+                                    複方天然植物精華，全方面修護調理肌膚，使肌膚緊實透亮、潤澤嫩白、撫平細紋，有效延緩肌膚老化、淡化斑點，長效潤澤保濕精華乳霜。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報B 區域 END -->
+
+                <!-- 品牌情報C 區域 START -->
+                <section class="container product-g">
+                    <div class="row align-items-stretch">
+                        <div class="col-self order-1 order-sm-1 order-md-2 order-lg-2 img-slide">
+                            <div class="product-img">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oInterviewPic3_86.jpg?637987630442295884" />
+                            </div>
+                        </div>
+                        <div class="col-self order-2 order-sm-2 order-md-1 order-lg-1 text-slide">
+                            <div class="text-area">
+                                <h4 class="text-left content-title">蘋果青春因子(精華液安瓶禮盒)</h4>
+                                <p class="text-content">
+                                    瑞士蘋果Malus Domestica專利抗老精華配方，精華液提供肌膚所需養分，具絕佳的保濕效果，延緩肌膚老化、撫平細紋，回復肌膚彈力與緊實。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- 品牌情報C 區域 END -->
+
+                <!-- 置底BN 區域 START -->
+                <section class="container-fluid product-h">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="#" target="_blank">
+                                <img class="img-fluid" src="https://event.1111.com.tw/event21/anniversary/Pic/oBanner_86.jpg?637987630442295884" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 置底BN 區域 END -->
+            </div>
+
+            <!--Corner START-->
+            <div class="bg-corner corner-top corner-left"></div>
+            <div class="bg-corner corner-top corner-right"></div>
+            <div class="bg-corner corner-bottom corner-left"></div>
+            <div class="bg-corner corner-bottom corner-right"></div>
+            <!--Corner END-->
+        </main>
+        <!--Main END -->
+
+        <!-- Footer START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="footer-text text-center">
+                        全球華人股份有限公司版權所有&copy;2022&nbsp;1111 Job Bank All Rights Reserved.
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;" class="share-fb" onclick="fb_click();" title="分享至FB" alt="分享至FB">
+                            <img src="images/share-fb.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-h.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-a.png" title="分享至FB" alt="分享至FB"/>
+                        </a>
+                        <a href="javascript:;" class="share-ig" onclick="ig_click();" title="分享至IG" alt="分享至IG">
+                            <img src="images/share-ig.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-h.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-a.png" title="分享至IG" alt="分享至IG"/>
+                        </a>
+                        <a href="javascript:;" class="share-line" onclick="line_click();" title="分享至Line" alt="分享至Line">
+                            <img src="images/share-line.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-h.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-a.png" title="分享至Line" alt="分享至Line"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+
+        <!-- Check Modal START -->
+        <div class="modal fade" id="ModalCheck" tabindex="-1" role="dialog" aria-labelledby="ModalCheckTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="ModalCheckTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="coin-not">
+                            唉喲！您目前擁有的硬幣數量不足呦！
+                        </div>
+                        <div id="awardCheck">
+                            您目前尚有&nbsp;
+                            <div class="red-font"><span id="coin-count">0</span>枚&nbsp;</div>硬幣。<br/> 請問是否消耗&nbsp;
+                            <div class="red-font">2枚</div>&nbsp;硬幣，<br/>
+                            <div id="textRegister">
+                                登記<b class="red-font">淨呼吸極淨型空氣清淨機</b>的抽獎活動呢?<br/>
+                                <small>(將於2023年2月3日抽出得獎者，2月10日前公告得獎名單。)</small>
+                            </div>
+                            <div id="textExchange">
+                                兌換<b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>呢?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary btn-leave" data-dismiss="modal">離開</a>
+                        <a class="btn btn-primary register" data-toggle="modal" data-target="#ModalConfirm" data-dismiss="modal" onclick="confirm('RegisterOk');">登記</a>
+                        <a class="btn btn-primary exchange" data-toggle="modal" data-target="#ModalConfirm" data-dismiss="modal" onclick="confirm('ExchangeOk');">兌換</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Check Modal END -->
+        <!-- Confirm Modal START -->
+        <div class="modal fade" id="ModalConfirm" tabindex="-1" role="dialog" aria-labelledby="ModalConfirmTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<h5 class="modal-title" id="ModalCheckTitle">Modal title</h5>-->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="registerOk">
+                            您已成功登記抽獎活動，以下是您參與的抽獎獎品：<br/>
+                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>，<br/> 請填寫基本資料，以利後續獎品寄送。
+                        </div>
+                        <div id="exchangeOk">
+                            您已成功申請登記<br/>
+                            <b class="red-font">VXY慧絲 納米隱形煥顏貼(2片入)(1組)</b>，<br/> 請填寫基本資料，以利後續獎品寄送。
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-secondary btn-leave" data-dismiss="modal">稍後填寫</a>
+                        <a href="record.html#recipient" class="btn btn-primary">填寫資料</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Confirm Modal END -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- 倒數計時器 START -->
+    <script src="js/countdown.js"></script>
+    <!-- 倒數計時器 END -->
+
+
+    <!-- Style START -->
+    <script src="js/style.js"></script>
+    <!-- Style START -->
+
+
+    <!-- GoTop START -->
+    <div id="BackTop">
+        <button type="button" class="toTop-arrow"></button>
+        <a href="#" target="_blank" class="qa">問卷調查</a>
+    </div>
+    <script src="js/gotop.js "></script>
+    <!-- GoTop END -->
+
+
+
+    <!-- Login-Demo START -->
+    <script src="js/login-demo.js"></script>
+    <!-- Login-Demo END -->
+
+</body>
+
+</html>

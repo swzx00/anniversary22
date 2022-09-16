@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-style.css">
+    <link rel="stylesheet" href="css/gotop.css">
+    <title>活動獎項-1111週年慶│幸運一把抓</title>
+</head>
+
+<body>
+    <div id="awards">
+        <!-- Nav START -->
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Navbar START-->
+                        <div class="col-12 col-lg-12">
+                            <div class="navbar navbar-expand-lg">
+                                <!-- Navbar MobileHumberger START -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-m" aria-controls="navbar-m" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- Navbar MobileHumberger END -->
+                                <!-- Navbar PC START -->
+                                <div class="collapse navbar-collapse" id="navbar-m">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" title="首頁" alt="首頁" style="background-image:url('images/btn-index-a.png') ;">
+                                                <span>首　　頁</span>
+                                                <img src="images/btn-index.png" title="首頁" alt="首頁" />
+                                                <img src="images/btn-index-h.png"  title="首頁" alt="首頁" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="directions.html" title="活動說明" alt="活動說明" style="background-image:url('images/btn-directions-a.png') ;">
+                                                <span>活動說明</span>
+                                                <img src="images/btn-directions.png" title="活動說明" alt="活動說明" />
+                                                <img src="images/btn-directions-h.png" title="活動說明" alt="活動說明" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="awards.html" title="活動獎項" alt="活動獎項" style="background-image:url('images/btn-awards-a.png') ;">
+                                                <span>活動獎項</span>
+                                                <img src="images/btn-awards.png" title="活動獎項" alt="活動獎項" />
+                                                <img src="images/btn-awards-h.png" title="活動獎項" alt="活動獎項" />
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="record.html" title="獎項紀錄" alt="獎項紀錄" style="background-image:url('images/btn-record-a.png') ;">
+                                                <span>獎項紀錄</span>
+                                                <img src="images/btn-record.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <img src="images/btn-record-h.png" title="獎項紀錄" alt="獎項紀錄" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="announcement.html" title="得獎公告" alt="得獎公告" style="background-image:url('images/btn-announcement-a.png') ;">
+                                                <span>得獎公告</span>
+                                                <img src="images/btn-announcement.png" title="得獎公告" alt="得獎公告" />
+                                                <img src="images/btn-announcement-h.png" title="得獎公告" alt="得獎公告" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nav-login">
+                                            <a class="nav-link" id="login"  href="https://recruit.1111.com.tw/dLoginOnly.aspx" target="_blank" onclick="goLogin();" title="登入" alt="登入" style="background-image:url('images/btn-login-a.png') ;">
+                                                <span>登　　入</span>
+                                                <img src="images/btn-login.png" title="登入" alt="登入" />
+                                                <img src="images/btn-login-h.png" title="登入" alt="登入" />
+                                            </a>
+                                            <a class="nav-link" id="logout" href="javascript:;" onclick="goLogout();" title="登出" alt="登出" style="background-image:url('images/btn-logout-a.png') ;">
+                                                <span>登　　出</span>
+                                                <img src="images/btn-logout.png" title="登出" alt="登出" />
+                                                <img src="images/btn-logout-h.png" title="登出" alt="登出" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Navbar PC END -->
+                                <div class="coin">
+                                    <a>金幣數：</a>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Navbar END-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav END -->
+
+        <!-- Header START -->
+        <header class="container-fluid">
+            <div class="row">
+                <img src="images/header.jpg" title="1111週年慶│幸運1把抓" alt="1111週年慶│幸運1把抓" />
+            </div>
+        </header>
+        <!-- Header END -->
+
+        <!-- Main START -->
+        <main class="container-fluid" id="main-awards">
+            <!--Marquee START-->
+            <div class="row">
+                <div class="container marquee-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="marquee">
+                                <div class="marquee-title">&nbsp;</div>
+                                <div class="marquee-time" id="countdown">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marquee END-->
+            <div class=row>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area awards-title">
+                                <h3 class="section-title fade in show d-block" title="試手氣好禮到" alt="試手氣好禮到" id="tab-title-01" style="background-image: url('images/title-b-01.png');">試手氣好禮到</h3>
+                                <h3 class="section-title fade in d-none" title="直接兌換贈品" alt="直接兌換贈品" id="tab-title-02" style="background-image: url('images/title-b-02.png');">直接兌換贈品</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container nav-row">
+                    <div class="row">
+                        <ul class="nav nav-tabs" id="tabAwards" role="tablist">
+                            <li class="nav-item">
+                                <a class="btn active" title="登記抽大獎" alt="登記抽大獎" id="tab-awards-01" data-toggle="tab" href="#awards-01" role="tab" aria-controls="awards-01" aria-selected="true">
+                                    登記抽大獎
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" title="金幣選好禮" alt="金幣選好禮" id="tab-awards-02" data-toggle="tab" href="#awards-02" role="tab" aria-controls="awards-02" aria-selected="false">
+                                    金幣選好禮
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="container sort-area">
+                    <div class="row">
+                        <div class="sort sort-01">
+                            <div class="filter">
+                                <a class="badge badge-pill active" href="JavaScript:void(0);" id="all">全部</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="ticket">票券(含電子票券)</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="daily">生活用品</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="makeups">美妝保養</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="3c">3C</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="food">食品</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="ads">徵才廣告</a>
+                                <a class="badge badge-pill" href="JavaScript:void(0);" id="other">其它</a>
+                            </div>
+                            <div class="sequence" id="dropdownSequence">
+                                <label for="dropdownAwards">排序：</label>
+                                <div class="" id="dropAmount">
+                                    <button type="button" class="btn"></button>
+                                </div>
+                                <div class="" id="dropCoin">
+                                    <button type="button" class="btn">金幣數量</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container tab-content" id="tabAwardsContent">
+                    <div class="row tab-pane fade in active show" id="awards-01" role="tabpanel" aria-labelledby="tab-awards-01">
+                        <div class="col-12">
+                            <div class="row justify-content-center justify-content-sm-start align-items-start">
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tab-pane fade in" id="awards-02" role="tabpanel" aria-labelledby="tab-awards-02">
+                        <div class="col-12">
+                            <div class="row justify-content-center justify-content-sm-start align-items-start">
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-a.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-04.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                會員熱門講座
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-05.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                中華人事主管協會
+                                            <h6 class="award-title">
+                                                課程現金抵用券
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-06.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                臺南美術館
+                                            <h6 class="award-title">
+                                                貴賓券(門票1張)
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>3</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-01.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                髮魔漾
+                                            <h6 class="award-title">
+                                                護髮泡泡染
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>7</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-02.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                魔力奇肌xG.U致优
+                                            <h6 class="award-title">
+                                                山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠山芙蓉修護凝膠
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>2</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                                    <a href="product-intro-b.html" class="card award-block">
+                                        <figure class="card-header">
+                                            <img src="images/company/AwardsPic-03.jpg" />
+                                        </figure>
+                                        <div class="card-body">
+                                            <h5 class="award-company">
+                                                哈根達斯
+                                            <h6 class="award-title">
+                                                優格保冷袋
+                                            </h6>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="info-amount"><span>66</span></div>
+                                            <div class="info-coin">使用金幣數<span>1</span></div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Corner START-->
+            <div class="bg-corner corner-top corner-left"></div>
+            <div class="bg-corner corner-top corner-right"></div>
+            <div class="bg-corner corner-bottom corner-left"></div>
+            <div class="bg-corner corner-bottom corner-right"></div>
+            <!--Corner END-->
+        </main>
+        <!-- Main END -->
+
+        <!-- Footer START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="footer-text text-center">
+                        全球華人股份有限公司版權所有&copy;2022&nbsp;1111 Job Bank All Rights Reserved.
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;" class="share-fb" onclick="fb_click();" title="分享至FB" alt="分享至FB">
+                            <img src="images/share-fb.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-h.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-a.png" title="分享至FB" alt="分享至FB"/>
+                        </a>
+                        <a href="javascript:;" class="share-ig" onclick="ig_click();" title="分享至IG" alt="分享至IG">
+                            <img src="images/share-ig.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-h.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-a.png" title="分享至IG" alt="分享至IG"/>
+                        </a>
+                        <a href="javascript:;" class="share-line" onclick="line_click();" title="分享至Line" alt="分享至Line">
+                            <img src="images/share-line.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-h.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-a.png" title="分享至Line" alt="分享至Line"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- 倒數計時器 START -->
+    <script src="js/countdown.js"></script>
+    <!-- 倒數計時器 END -->
+
+    <!-- Style START -->
+    <script src="js/style.js"></script>
+    <!-- Style START -->
+
+
+    <!-- GoTop START -->
+    <div id="BackTop">
+        <button type="button" class="toTop-arrow"></button>
+        <a href="#" target="_blank" class="qa">問卷調查</a>
+    </div>
+    <script src="js/gotop.js "></script>
+    <!-- GoTop END -->
+
+    <!-- Login-Demo START -->
+    <script src="js/login-demo.js"></script>
+    <!-- Login-Demo END -->
+</body>
+
+</html>

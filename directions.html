@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Font-Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate-style.css">
+    <link rel="stylesheet" href="css/gotop.css">
+    <title>活動說明-1111週年慶│幸運一把抓</title>
+</head>
+
+<body>
+    <div id="directions">
+        <!-- Nav START -->
+        <nav class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Navbar START-->
+                        <div class="col-12 col-lg-12">
+                            <div class="navbar navbar-expand-lg">
+                                <!-- Navbar MobileHumberger START -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-m" aria-controls="navbar-m" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <!-- Navbar MobileHumberger END -->
+                                <!-- Navbar PC START -->
+                                <div class="collapse navbar-collapse" id="navbar-m">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html" title="首頁" alt="首頁" style="background-image:url('images/btn-index-a.png') ;">
+                                                <span>首　　頁</span>
+                                                <img src="images/btn-index.png" title="首頁" alt="首頁" />
+                                                <img src="images/btn-index-h.png"  title="首頁" alt="首頁" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="directions.html" title="活動說明" alt="活動說明" style="background-image:url('images/btn-directions-a.png') ;">
+                                                <span>活動說明</span>
+                                                <img src="images/btn-directions.png" title="活動說明" alt="活動說明" />
+                                                <img src="images/btn-directions-h.png" title="活動說明" alt="活動說明" />
+                                                <span class="sr-only">(current)</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="awards.html" title="活動獎項" alt="活動獎項" style="background-image:url('images/btn-awards-a.png') ;">
+                                                <span>活動獎項</span>
+                                                <img src="images/btn-awards.png" title="活動獎項" alt="活動獎項" />
+                                                <img src="images/btn-awards-h.png" title="活動獎項" alt="活動獎項" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="record.html" title="獎項紀錄" alt="獎項紀錄" style="background-image:url('images/btn-record-a.png') ;">
+                                                <span>獎項紀錄</span>
+                                                <img src="images/btn-record.png" title="獎項紀錄" alt="獎項紀錄" />
+                                                <img src="images/btn-record-h.png" title="獎項紀錄" alt="獎項紀錄" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="announcement.html" title="得獎公告" alt="得獎公告" style="background-image:url('images/btn-announcement-a.png') ;">
+                                                <span>得獎公告</span>
+                                                <img src="images/btn-announcement.png" title="得獎公告" alt="得獎公告" />
+                                                <img src="images/btn-announcement-h.png" title="得獎公告" alt="得獎公告" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item nav-login">
+                                            <a class="nav-link" id="login"  href="https://recruit.1111.com.tw/dLoginOnly.aspx" target="_blank" onclick="goLogin();" title="登入" alt="登入" style="background-image:url('images/btn-login-a.png') ;">
+                                                <span>登　　入</span>
+                                                <img src="images/btn-login.png" title="登入" alt="登入" />
+                                                <img src="images/btn-login-h.png" title="登入" alt="登入" />
+                                            </a>
+                                            <a class="nav-link" id="logout" href="javascript:;" onclick="goLogout();" title="登出" alt="登出" style="background-image:url('images/btn-logout-a.png') ;">
+                                                <span>登　　出</span>
+                                                <img src="images/btn-logout.png" title="登出" alt="登出" />
+                                                <img src="images/btn-logout-h.png" title="登出" alt="登出" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Navbar PC END -->
+                                <div class="coin">
+                                    <a>金幣數：</a>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Navbar END-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav END -->
+
+        <!-- Header START -->
+        <header class="container-fluid">
+            <div class="row">
+                <img src="images/header.jpg" title="1111週年慶│幸運1把抓" alt="1111週年慶│幸運1把抓" />
+            </div>
+        </header>
+        <!-- Header END -->
+
+        <!-- Main START -->
+        <main class="container-fluid" id="main-directions">
+            <!--Marquee START-->
+            <div class="row">
+                <div class="container marquee-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="marquee">
+                                <div class="marquee-title">&nbsp;</div>
+                                <div class="marquee-time" id="countdown">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Marquee END-->
+            <div class=row>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-a-01.png');">活動期間</h3>
+                                <div class="section-box">
+                                    <div class="box-top">
+                                        <h4>2022/11/1~2022/11/30</h4>
+                                    </div>
+                                    <div class="box-bottom">
+                                        <span>參加資格及辦法：凡1111企業會員，活動期間加入徵才方案就有機會獲得各式精美好禮。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-a-02.png');">活動說明</h3>
+                                <div class="section-box">
+                                    <div class="box-top">
+                                        <div class="join-us">
+                                            <span class="join-text" style="background-image: url('images/join-a.png')">加入1111</span>
+                                            <span class="join-card" style="background-image: url('images/join-b.png')">徵才VIP</span>
+                                        </div>
+                                        <div class="join-arrow"></div>
+                                        <div class="pay-choose">
+                                            <div class="pay-item">
+                                                <span class="pay-card">季繳</span>金幣<span class="pay-number">1</span>枚
+                                            </div>
+                                            <div class="pay-item">
+                                                <span class="pay-card">半年繳</span>金幣<span class="pay-number">2</span>枚
+                                            </div>
+                                            <div class="pay-item">
+                                                <span class="pay-card">年繳</span>金幣<span class="pay-number">4</span>枚
+                                            </div>
+                                            <div class="pay-item">
+                                                <span class="pay-card">雙年繳</span>金幣<span class="pay-number">8</span>枚
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-bottom">
+                                        <span class="call-now">立即來電</span>
+                                        <div class="call-phone">北區<span>(02)</span>8787-1111</div>
+                                        <div class="call-phone">中區<span>(04)</span>2203-1111</div>
+                                        <div class="call-phone">南區<span>(07)</span>958-1111</div>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <a href="https://recruit.1111.com.tw/dVipRegister.aspx" target="_blank" class="btn btn-join" title="立即加入VIP" alt="立即加入VIP">
+                                        立即加入VIP
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-a-03.png');">Q&A</h3>
+                                <div class="section-block">
+                                    <div class="qa-accordion" id="qa-accordion">
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" aria-expanded="true" href="#qa-01">
+                                                活動對象?
+                                            </div>
+                                            <div class="card-body collapse show" data-parent="#qa-accordion" id="qa-01">
+                                                於活動期間，新企業會員加入付費徵才方案，或老客戶完成續約，即可獲得金幣（季繳1枚、半年繳2枚、年繳4枚、雙年繳8枚）；但保險、傳直銷、人力派遣、八大行業恕不適用。
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" aria-expanded="false" href="#qa-02">
+                                                如何使用金幣?
+                                            </div>
+                                            <div class="card-body collapse" data-parent="#qa-accordion" id="qa-02">
+                                                金幣使用方式（A、B任選）：
+                                                <ol>
+                                                    <li>選好禮：依兌獎頁面標示的金幣數量，可直接兌換各式獎項。</li>
+                                                    <li>登記抽大獎：依抽獎頁面標示的金幣數量，參加抽獎活動，同一獎項不限下注次數（中獎以一次為限）。抽獎結果，將於2023年2月3日抽出得獎者。</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" data-toggle="collapse" aria-expanded="false" href="#qa-03">
+                                                想要的贈品被兌換完了怎麼辦?
+                                            </div>
+                                            <div class="card-body collapse" data-parent="#qa-accordion" id="qa-03">
+                                                本活動兌換贈品數量有限，先搶先贏，送完為止。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-a-04.png');">詳細說明</h3>
+                                <div class="section-block">
+                                    <div class="info-text">
+                                        <ol>
+                                            <li>於活動期間，新企業會員加入付費徵才方案，或老客戶完成續約入帳後，即可獲得金幣（季繳1枚、半年繳2枚、年繳4枚、雙年繳8枚）；但保險、傳直銷、人力派遣、八大行業恕不適用。</li>
+                                            <li>本項週年慶活動不可與其他優惠併用，兌獎金幣於活動截止未使用者，視為自動拋棄，不得使用。</li>
+                                            <li>金幣使用方式（A、B任選）：
+                                                <ol>
+                                                    <li>選好禮：依兌獎頁面標示的金幣數量，可直接兌換各式獎項。</li>
+                                                    <li>登記抽大獎：依獎品頁面標示的金幣數量，可使用金幣參與抽獎活動，將於2023年2月3日抽出得獎者，2月10日前公告得獎名單。</li>
+                                                </ol>
+                                            </li>
+                                            <li>如兌換徵才廣告相關版位，需於6個月或VIP使用期限內，提供相關製稿資料（職缺/圖片…等），否則視同放棄該獎項。</li>
+                                            <li>本活動兌換贈品數量有限，送完為止。</li>
+                                            <li>本活動限在1111人力銀行，以企業會員用戶（代表人或代理人）主帳號參加，如有冒用、偽造、不實，或所留之聯絡方式錯誤，致無法聯繫者，均視同放棄得獎資格。</li>
+                                            <li>全球華人股份有限公司員工不得參加本活動。</li>
+                                            <li>本公司保留解釋、修正及終止本活動辦法之權利，若有其他未盡事宜，悉依本公司最新修正活動辦法為準。</li>
+                                        </ol>
+                                        <p>註：如有獲得1111「2022週年慶活動」獎品，而有合約期前解約之情事時，應返還該獎品或同等價額。</p>
+                                        <ul>
+                                            <li>最後兌/抽獎截止時間：2023/1/11 23:59，</li>
+                                            <li>獎品寄件聯絡資料填寫截止時間：2023/1/18 23:59。</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area">
+                                <h3 class="section-title" style="background-image: url('images/title-a-05.png');">知名企業 合作贊助</h3>
+                                <div class="section-block">
+                                    <div class="row sponsor">
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-a.html" title="SponsorLogo-01" alt="SponsorLogo-01">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-01.jpg" title="SponsorLogo-01" alt="SponsorLogo-01" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-a.html" title="SponsorLogo-02" alt="SponsorLogo-02">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-02.jpg" title="SponsorLogo-02" alt="SponsorLogo-02" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-a.html" title="SponsorLogo-03" alt="SponsorLogo-03">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-03.jpg" title="SponsorLogo-03" alt="SponsorLogo-03" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-a.html" title="SponsorLogo-01" alt="SponsorLogo-04">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-04.jpg" title="SponsorLogo-04" alt="SponsorLogo-04" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-b.html" title="SponsorLogo-01" alt="SponsorLogo-05">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-05.jpg" title="SponsorLogo-05" alt="SponsorLogo-05" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-b.html" title="SponsorLogo-01" alt="SponsorLogo-06">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-06.jpg" title="SponsorLogo-06" alt="SponsorLogo-06" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-b.html" title="SponsorLogo-01" alt="SponsorLogo-07">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-07.jpg" title="SponsorLogo-07" alt="SponsorLogo-07" />
+                                            </a>
+                                        </div>
+                                        <div class="col-6 col-lg-3">
+                                            <a href="product-intro-b.html" title="SponsorLogo-01" alt="SponsorLogo-08">
+                                                <img class="img-fluid" src="images/company/SponsorLogo-08.jpg" title="SponsorLogo-08" alt="SponsorLogo-08" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Corner START-->
+            <div class="bg-corner corner-top corner-left"></div>
+            <div class="bg-corner corner-top corner-right"></div>
+            <div class="bg-corner corner-bottom corner-left"></div>
+            <div class="bg-corner corner-bottom corner-right"></div>
+            <!--Corner END-->
+        </main>
+        <!-- Main END -->
+        <!-- Footer START -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row mx-auto">
+                    <div class="footer-text text-center">
+                        全球華人股份有限公司版權所有&copy;2022&nbsp;1111 Job Bank All Rights Reserved.
+                    </div>
+                    <div class="share">
+                        <a href="javascript:;" class="share-fb" onclick="fb_click();" title="分享至FB" alt="分享至FB">
+                            <img src="images/share-fb.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-h.png" title="分享至FB" alt="分享至FB"/>
+                            <img src="images/share-fb-a.png" title="分享至FB" alt="分享至FB"/>
+                        </a>
+                        <a href="javascript:;" class="share-ig" onclick="ig_click();" title="分享至IG" alt="分享至IG">
+                            <img src="images/share-ig.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-h.png" title="分享至IG" alt="分享至IG"/>
+                            <img src="images/share-ig-a.png" title="分享至IG" alt="分享至IG"/>
+                        </a>
+                        <a href="javascript:;" class="share-line" onclick="line_click();" title="分享至Line" alt="分享至Line">
+                            <img src="images/share-line.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-h.png" title="分享至Line" alt="分享至Line"/>
+                            <img src="images/share-line-a.png" title="分享至Line" alt="分享至Line"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer END -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- 倒數計時器 START -->
+    <script src="js/countdown.js"></script>
+    <!-- 倒數計時器 END -->
+
+    <!-- Style START -->
+    <script src="js/style.js"></script>
+    <!-- Style START -->
+    <!-- GoTop START -->
+    <div id="BackTop">
+        <button type="button" class="toTop-arrow"></button>
+        <a href="#" target="_blank" class="qa">問卷調查</a>
+    </div>
+    <script src="js/gotop.js "></script>
+    <!-- GoTop END -->
+
+    <!-- Login-Demo START -->
+    <script src="js/login-demo.js"></script>
+    <!-- Login-Demo END -->
+</body>
+
+</html>
