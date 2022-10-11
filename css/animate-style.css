@@ -221,19 +221,19 @@
    animation: fade-in .75s linear 1 2s forwards;
 }
 .prize-02.animate{
-   animation: fade-in .75s linear 1 3.25s forwards;
-}
-.prize-03.animate{
-   animation: fade-in .75s linear 1 3s forwards;
-}
-.prize-04.animate{
    animation: fade-in .75s linear 1 2.75s forwards;
 }
-.gift-01.animate{
+.prize-03.animate{
    animation: fade-in .75s linear 1 2.25s forwards;
 }
-.gift-02.animate{
+.prize-04.animate{
+   animation: fade-in .75s linear 1 3s forwards;
+}
+.gift-01.animate{
    animation: fade-in .75s linear 1 2.5s forwards;
+}
+.gift-02.animate{
+   animation: fade-in .75s linear 1 3.25s forwards;
 }
 @keyframes fade-in {
    0%{
