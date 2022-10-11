@@ -1018,32 +1018,32 @@ body #index {
                 }
             }
             &.prize-04{
-                width:30%;
+                width:32.5%;
                 left:15%;
                 right:auto;
                 bottom: 5%;
                 z-index:7;
                 @include sm{
                     z-index:7;
-                    width:30%;
-                    left:40%;
+                    width:32.5%;
+                    left:38%;
                     right:auto;
                     bottom:-3%;
                 }
                 @include md{
-                    width:22.5%;
-                    left:10%;
+                    width:25%;
+                    left:2.5%;
                     bottom:37.5%;
                 }
                 @include lg{
-                    width:20%;
-                    left:10%;
+                    width:22.5%;
+                    left:8%;
                     bottom:-5%;
                 }
                 @include xl{
-                    width:17.5%;
-                    left:20%;
-                    bottom:-5%;
+                    width:20%;
+                    left:16.5%;
+                    bottom:-9%;
                 }
             }
         }
@@ -1069,14 +1069,14 @@ body #index {
                     bottom:25%;
                 }
                 @include lg{
-                    width:12.5%;
+                    width:10%;
                     left: 19%;
-                    bottom:22.5%;
+                    bottom:27.5%;
                 }
                 @include xl{
-                    width:11%;
-                    left: 25%;
-                    bottom:25%;
+                    width:8%;
+                    left:28%;
+                    bottom:27.5%;
                 }
             }
             &.gift-02{

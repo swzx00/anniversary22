@@ -1425,7 +1425,7 @@ body #index .bg-decorate .corner-bottom.corner-right {
 }
 
 #main-index .main-area .prize.prize-04 {
-  width: 30%;
+  width: 32.5%;
   left: 15%;
   right: auto;
   bottom: 5%;
@@ -1436,8 +1436,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
   #main-index .main-area .prize.prize-04 {
     /* 576px 以上*/
     z-index: 7;
-    width: 30%;
-    left: 40%;
+    width: 32.5%;
+    left: 38%;
     right: auto;
     bottom: -3%;
   }
@@ -1446,8 +1446,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 768px) {
   #main-index .main-area .prize.prize-04 {
     /* 768px 以上 */
-    width: 22.5%;
-    left: 10%;
+    width: 25%;
+    left: 2.5%;
     bottom: 37.5%;
   }
 }
@@ -1455,8 +1455,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 992px) {
   #main-index .main-area .prize.prize-04 {
     /* 992px 以上 */
-    width: 20%;
-    left: 10%;
+    width: 22.5%;
+    left: 8%;
     bottom: -5%;
   }
 }
@@ -1464,9 +1464,9 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 1200px) {
   #main-index .main-area .prize.prize-04 {
     /* 1200px 以上 */
-    width: 17.5%;
-    left: 20%;
-    bottom: -5%;
+    width: 20%;
+    left: 16.5%;
+    bottom: -9%;
   }
 }
 
@@ -1506,18 +1506,18 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 992px) {
   #main-index .main-area .gift.gift-01 {
     /* 992px 以上 */
-    width: 12.5%;
+    width: 10%;
     left: 19%;
-    bottom: 22.5%;
+    bottom: 27.5%;
   }
 }
 
 @media (min-width: 1200px) {
   #main-index .main-area .gift.gift-01 {
     /* 1200px 以上 */
-    width: 11%;
-    left: 25%;
-    bottom: 25%;
+    width: 8%;
+    left: 28%;
+    bottom: 27.5%;
   }
 }
 
