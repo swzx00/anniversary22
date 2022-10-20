@@ -3663,57 +3663,35 @@ main.product .product-c .company-title {
   text-align: left;
   padding: 0 30px;
   /*margin-bottom:15px;*/
+  /*&::before, &::after{
+      content:"";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      top:50%;
+      background-color: #ffffff;
+      @include md{
+          width: 5%;
+      }
+      @include lg{
+          width: 15%;
+      }
+      @include xl{
+          width: 20%;
+      }
+  }
+  &::before{
+      left:30px;
+  }
+  &::after{
+      right:30px;
+  }*/
 }
 @media (min-width: 768px) {
   main.product .product-c .company-title {
     /* 768px 以上 */
     text-align: center;
-    padding: 0 calc(5% + 45px);
   }
-}
-@media (min-width: 992px) {
-  main.product .product-c .company-title {
-    /* 992px 以上 */
-    padding: 0 calc(15% + 45px);
-  }
-}
-@media (min-width: 1200px) {
-  main.product .product-c .company-title {
-    /* 1200px 以上 */
-    padding: 0 calc(20% + 45px);
-  }
-}
-main.product .product-c .company-title::before, main.product .product-c .company-title::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  top: 50%;
-  background-color: #ffffff;
-}
-@media (min-width: 768px) {
-  main.product .product-c .company-title::before, main.product .product-c .company-title::after {
-    /* 768px 以上 */
-    width: 5%;
-  }
-}
-@media (min-width: 992px) {
-  main.product .product-c .company-title::before, main.product .product-c .company-title::after {
-    /* 992px 以上 */
-    width: 15%;
-  }
-}
-@media (min-width: 1200px) {
-  main.product .product-c .company-title::before, main.product .product-c .company-title::after {
-    /* 1200px 以上 */
-    width: 20%;
-  }
-}
-main.product .product-c .company-title::before {
-  left: 30px;
-}
-main.product .product-c .company-title::after {
-  right: 30px;
 }
 main.product .product-c .profile-text {
   width: 100%;

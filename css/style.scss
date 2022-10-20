@@ -3061,16 +3061,9 @@ main.product {
             padding:0 30px;
             @include md{
                 text-align: center;
-                padding:0 calc(5% + 45px);
-            }
-            @include lg{
-                padding:0 calc(15% + 45px);
-            }
-            @include xl{
-                padding:0 calc(20% + 45px);
             }
             /*margin-bottom:15px;*/
-            &::before, &::after{
+            /*&::before, &::after{
                 content:"";
                 position: absolute;
                 width: 0;
@@ -3092,7 +3085,7 @@ main.product {
             }
             &::after{
                 right:30px;
-            }
+            }*/
         }
         .profile-text{
             width: 100%;
