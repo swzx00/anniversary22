@@ -3059,10 +3059,17 @@ main.product {
             color:#ffffff;
             text-align: left;
             padding:0 30px;
-            /*margin-bottom:15px;*/
             @include md{
                 text-align: center;
+                padding:0 calc(5% + 45px);
             }
+            @include lg{
+                padding:0 calc(15% + 45px);
+            }
+            @include xl{
+                padding:0 calc(20% + 45px);
+            }
+            /*margin-bottom:15px;*/
             &::before, &::after{
                 content:"";
                 position: absolute;
