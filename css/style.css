@@ -3282,19 +3282,25 @@ main section .record-input .btn-area button.btn {
   padding-right: 15px;
 }
 .product-intro .breadcrumb-area .breadcrumb {
-  background-color: #7f2a39;
+  /*background-color: #7f2a39;*/
+  background-color: #ffffff;
   border-radius: 10px;
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #7f2a39;
   width: auto;
   margin-bottom: 0;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 21px;
 }
 .product-intro .breadcrumb-area .breadcrumb .breadcrumb-item.active {
-  color: #f2bd2e;
+  /*color: #f2bd2e;*/
+  color: #050761;
+  font-weight: 700;
 }
 .product-intro .breadcrumb-area .breadcrumb .breadcrumb-item a {
-  color: #ffffff;
+  /*color: #ffffff;*/
+  color: #7f2a39;
 }
 
 .product-intro main {

@@ -19,7 +19,7 @@
 //    });
 
 // Set the date we're counting down to
-var countDownDate = new Date("2022/11/11 08:30:00").getTime();//活動開始時間
+var countDownDate = new Date("2022/11/11 00:00:00").getTime();//活動開始時間
 var countDownDate2 = new Date("2023/01/11 23:59:00").getTime();//活動截止時間
 
 var now = new Date().getTime();
