@@ -435,6 +435,16 @@ header img {
 
 /* Header END */
 /* Footer START */
+div#announcement {
+  height: 100%;
+  min-height: 100vh;
+  display: flex; /*使物件依序排列*/
+  flex-direction: column; /*使物件垂直排列*/
+}
+div#announcement main {
+  flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+}
+
 footer {
   width: 100%;
   color: #ffffff;
@@ -1035,9 +1045,9 @@ body #index .bg-decorate .corner-bottom.corner-right {
 #main-index .main-area .main-title {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 62.5%;
   z-index: 5;
-  width: 80%;
+  width: 87.5%;
   aspect-ratio: 37/21;
   transform: translate3d(-50%, 0, 0) scaleY(1);
   transform-origin: bottom center;
@@ -1045,18 +1055,18 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 576px) {
   #main-index .main-area .main-title {
     /* 576px 以上*/
-    z-index: 8;
+    z-index: 5;
     top: 55%;
-    left: 52.5%;
-    width: 70%;
+    left: 60%;
+    width: 85%;
   }
 }
 @media (min-width: 768px) {
   #main-index .main-area .main-title {
     /* 768px 以上 */
-    top: 40%;
+    top: 35%;
     left: 50%;
-    width: 60%;
+    width: 75%;
   }
 }
 @media (min-width: 992px) {
@@ -1079,18 +1089,19 @@ body #index .bg-decorate .corner-bottom.corner-right {
   filter: drop-shadow(6px 12px 5px rgba(9, 91, 114, 0.2));
 }
 #main-index .main-area .prize.prize-01 {
-  width: 65%;
-  left: 7.5%;
+  width: 57.5%;
+  left: auto;
+  right: 7.5%;
   bottom: 30%;
   z-index: 2;
 }
 @media (min-width: 576px) {
   #main-index .main-area .prize.prize-01 {
     /* 576px 以上*/
-    width: 55%;
-    left: 12.5%;
-    right: auto;
-    bottom: 35%;
+    width: 52.5%;
+    left: auto;
+    right: 12.5%;
+    bottom: 36%;
   }
 }
 @media (min-width: 768px) {
@@ -1121,29 +1132,28 @@ body #index .bg-decorate .corner-bottom.corner-right {
 }
 #main-index .main-area .prize.prize-02 {
   width: 40%;
-  right: 25%;
+  right: 0%;
   left: auto;
-  bottom: -5%;
+  bottom: -6.5%;
   z-index: 8;
 }
 @media (min-width: 576px) {
   #main-index .main-area .prize.prize-02 {
     /* 576px 以上*/
-    z-index: 5;
-    width: 30%;
-    right: 5%;
+    z-index: 8;
+    width: 32.5%;
+    right: 1%;
     left: auto;
-    bottom: 30%;
+    bottom: -4%;
     z-index: 6;
   }
 }
 @media (min-width: 768px) {
   #main-index .main-area .prize.prize-02 {
     /* 768px 以上 */
-    width: 30%;
-    right: auto;
-    left: 2.5%;
-    bottom: -7.5%;
+    width: 25%;
+    right: -1%;
+    bottom: 15%;
     z-index: 5;
   }
 }
@@ -1151,63 +1161,68 @@ body #index .bg-decorate .corner-bottom.corner-right {
   #main-index .main-area .prize.prize-02 {
     /* 992px 以上 */
     width: 22.5%;
-    right: 7.5%;
-    left: auto;
-    bottom: 0%;
+    right: 4%;
+    bottom: -5%;
   }
 }
 @media (min-width: 1200px) {
   #main-index .main-area .prize.prize-02 {
     /* 1200px 以上 */
-    width: 20%;
-    right: 5%;
-    bottom: -7.5%;
+    width: 17.5%;
+    right: 2%;
+    bottom: -10%;
   }
 }
 #main-index .main-area .prize.prize-03 {
-  width: 35%;
-  right: 0;
-  bottom: -1%;
+  width: 27.5%;
+  left: 2.5%;
+  right: auto;
+  bottom: 32.5%;
   z-index: 3;
 }
 @media (min-width: 576px) {
   #main-index .main-area .prize.prize-03 {
     /* 576px 以上*/
-    width: 32.5%;
-    right: 0;
-    bottom: -1%;
+    width: 25%;
+    left: 15%;
+    right: auto;
+    bottom: 38.5%;
+    z-index: 7;
   }
 }
 @media (min-width: 768px) {
   #main-index .main-area .prize.prize-03 {
     /* 768px 以上 */
-    width: 27.5%;
-    right: 0;
-    bottom: 17.5%;
+    width: 20%;
+    left: 2.5%;
+    bottom: 5%;
+    z-index: 7;
   }
 }
 @media (min-width: 992px) {
   #main-index .main-area .prize.prize-03 {
     /* 992px 以上 */
-    width: 22.5%;
-    right: 5%;
-    bottom: 35%;
+    width: 17.5%;
+    left: auto;
+    right: 10%;
+    bottom: 30%;
+    z-index: 3;
   }
 }
 @media (min-width: 1200px) {
   #main-index .main-area .prize.prize-03 {
     /* 1200px 以上 */
-    width: 17.5%;
-    right: 15%;
-    bottom: 17.5%;
+    width: 16%;
+    right: 13%;
+    bottom: 22%;
   }
 }
 #main-index .main-area .prize.prize-04 {
-  width: 32.5%;
-  left: 15%;
+  width: 35%;
+  left: 35%;
   right: auto;
-  bottom: 5%;
-  z-index: 7;
+  bottom: 0;
+  z-index: 6;
 }
 @media (min-width: 576px) {
   #main-index .main-area .prize.prize-04 {
@@ -1222,9 +1237,10 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 768px) {
   #main-index .main-area .prize.prize-04 {
     /* 768px 以上 */
-    width: 25%;
-    left: 2.5%;
-    bottom: 37.5%;
+    width: 22.5%;
+    left: 2%;
+    bottom: 39%;
+    z-index: 3;
   }
 }
 @media (min-width: 992px) {
@@ -1233,6 +1249,7 @@ body #index .bg-decorate .corner-bottom.corner-right {
     width: 22.5%;
     left: 8%;
     bottom: -5%;
+    z-index: 7;
   }
 }
 @media (min-width: 1200px) {
@@ -1251,9 +1268,10 @@ body #index .bg-decorate .corner-bottom.corner-right {
   aspect-ratio: 1/1;
 }
 #main-index .main-area .gift.gift-01 {
-  width: 22.5%;
-  left: 5%;
-  bottom: 29%;
+  width: 20%;
+  left: auto;
+  right: 2%;
+  bottom: 35%;
   z-index: 4;
 }
 @media (min-width: 576px) {
@@ -1261,15 +1279,18 @@ body #index .bg-decorate .corner-bottom.corner-right {
     /* 576px 以上*/
     width: 20%;
     left: 22.5%;
+    right: auto;
     bottom: 6%;
+    z-index: 8;
   }
 }
 @media (min-width: 768px) {
   #main-index .main-area .gift.gift-01 {
     /* 768px 以上 */
     width: 15%;
-    left: 12.5%;
-    bottom: 25%;
+    left: 13%;
+    bottom: 24%;
+    z-index: 4;
   }
 }
 @media (min-width: 992px) {
@@ -1278,6 +1299,7 @@ body #index .bg-decorate .corner-bottom.corner-right {
     width: 10%;
     left: 19%;
     bottom: 27.5%;
+    z-index: 4;
   }
 }
 @media (min-width: 1200px) {
@@ -1286,46 +1308,51 @@ body #index .bg-decorate .corner-bottom.corner-right {
     width: 8%;
     left: 28%;
     bottom: 27.5%;
+    z-index: 4;
   }
 }
 #main-index .main-area .gift.gift-02 {
   width: 22.5%;
-  right: 2.5%;
-  bottom: 37.5%;
-  z-index: 6;
+  left: 20%;
+  right: auto;
+  bottom: 0;
+  z-index: 7;
 }
 @media (min-width: 576px) {
   #main-index .main-area .gift.gift-02 {
     /* 576px 以上*/
     width: 20%;
-    right: 15%;
-    bottom: 42.5%;
-    z-index: 5;
+    left: auto;
+    right: 10%;
+    bottom: 35%;
+    z-index: 4;
   }
 }
 @media (min-width: 768px) {
   #main-index .main-area .gift.gift-02 {
     /* 768px 以上 */
-    width: 17.5%;
-    right: 5%;
-    bottom: 5%;
+    width: 16.5%;
+    right: 12.5%;
+    bottom: 1%;
     z-index: 6;
   }
 }
 @media (min-width: 992px) {
   #main-index .main-area .gift.gift-02 {
     /* 992px 以上 */
-    width: 12.5%;
-    right: 7.5%;
-    bottom: 27.5%;
+    width: 10%;
+    right: 1%;
+    bottom: 22%;
+    z-index: 4;
   }
 }
 @media (min-width: 1200px) {
   #main-index .main-area .gift.gift-02 {
     /* 1200px 以上 */
-    width: 10.5%;
-    right: 22.5%;
-    bottom: 2.5%;
+    width: 10%;
+    right: 27%;
+    bottom: 6%;
+    z-index: 4;
   }
 }
 #main-index .main-area .glass {
@@ -1463,7 +1490,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
   transform: translate(-50%, 0);
 }
 #main-index .box-base .button-area {
-  width: 90%;
+  width: 100%;
+  max-width: calc(100% - 30px);
   position: absolute;
   bottom: auto;
   top: 0;
@@ -1478,7 +1506,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
   #main-index .box-base .button-area {
     /* 576px 以上*/
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
+    max-width: 510px;
     bottom: auto;
     top: 0;
     left: 50%;

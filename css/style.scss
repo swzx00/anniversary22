@@ -499,7 +499,15 @@ header img {
 
 
 /* Footer START */
-
+div#announcement{
+	height: 100%;
+	min-height: 100vh;
+	display: flex; /*使物件依序排列*/
+	flex-direction: column; /*使物件垂直排列*/
+	& main{
+		flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+	}
+}
 footer {
 	width: 100%;
 	color: #ffffff;
@@ -1060,24 +1068,24 @@ body #index {
 		& .main-title {
 			position: absolute;
 			top: 50%;
-			left: 55%;
+			left: 62.5%;
 			z-index: 5;
-			width: 80%;
+			width: 87.5%;
 			aspect-ratio: 37/21;
 			transform: translate3d(-50%, 0, 0) scaleY(1);
 			transform-origin: bottom center;
 
 			@include sm {
-				z-index: 8;
+				z-index: 5;
 				top: 55%;
-				left: 52.5%;
-				width: 70%;
+				left: 60%;
+				width: 85%;
 			}
 
 			@include md {
-				top: 40%;
+				top: 35%;
 				left: 50%;
-				width: 60%;
+				width: 75%;
 			}
 
 			@include lg {
@@ -1097,16 +1105,17 @@ body #index {
 			filter: drop-shadow(6px 12px 5px rgba(9, 91, 114, .2));
 
 			&.prize-01 {
-				width: 65%;
-				left: 7.5%;
+				width: 57.5%;
+				left: auto;
+				right: 7.5%;
 				bottom: 30%;
 				z-index: 2;
 
 				@include sm {
-					width: 55%;
-					left: 12.5%;
-					right: auto;
-					bottom: 35%;
+					width: 52.5%;
+					left: auto;
+					right: 12.5%;
+					bottom: 36%;
 				}
 
 				@include md {
@@ -1132,79 +1141,83 @@ body #index {
 
 			&.prize-02 {
 				width: 40%;
-				right: 25%;
+				right: 0%;
 				left: auto;
-				bottom: -5%;
+				bottom: -6.5%;
 				z-index: 8;
 
 				@include sm {
-					z-index: 5;
-					width: 30%;
-					right: 5%;
+					z-index: 8;
+					width: 32.5%;
+					right: 1%;
 					left: auto;
-					bottom: 30%;
+					bottom: -4%;
 					z-index: 6;
 				}
 
 				@include md {
-					width: 30%;
-					right: auto;
-					left: 2.5%;
-					bottom: -7.5%;
+					width: 25%;
+					right: -1%;
+					bottom: 15%;
 					z-index: 5;
 				}
 
 				@include lg {
 					width: 22.5%;
-					right: 7.5%;
-					left: auto;
-					bottom: 0%;
-				}
-
-				@include xl {
-					width: 20%;
-					right: 5%;
-					bottom: -7.5%;
-				}
-			}
-
-			&.prize-03 {
-				width: 35%;
-				right: 0;
-				bottom: -1%;
-				z-index: 3;
-
-				@include sm {
-					width: 32.5%;
-					right: 0;
-					bottom: -1%;
-				}
-
-				@include md {
-					width: 27.5%;
-					right: 0;
-					bottom: 17.5%;
-				}
-
-				@include lg {
-					width: 22.5%;
-					right: 5%;
-					bottom: 35%;
+					right: 4%;
+					bottom: -5%;
 				}
 
 				@include xl {
 					width: 17.5%;
-					right: 15%;
-					bottom: 17.5%;
+					right: 2%;
+					bottom: -10%;
+				}
+			}
+
+			&.prize-03 {
+				width: 27.5%;
+				left:2.5%;
+				right: auto;
+				bottom: 32.5%;
+				z-index: 3;
+
+				@include sm {
+					width: 25%;
+					left:15%;
+					right: auto;
+					bottom: 38.5%;
+					z-index: 7;
+				}
+
+				@include md {
+					width: 20%;
+					left: 2.5%;
+					bottom: 5%;
+					z-index: 7;
+				}
+
+				@include lg {
+					width: 17.5%;
+					left:auto;
+					right: 10%;
+					bottom: 30%;
+					z-index: 3;
+				}
+
+				@include xl {
+					width: 16%;
+					right: 13%;
+					bottom: 22%;
 				}
 			}
 
 			&.prize-04 {
-				width: 32.5%;
-				left: 15%;
+				width: 35%;
+				left: 35%;
 				right: auto;
-				bottom: 5%;
-				z-index: 7;
+				bottom: 0;
+				z-index: 6;
 
 				@include sm {
 					z-index: 7;
@@ -1215,15 +1228,17 @@ body #index {
 				}
 
 				@include md {
-					width: 25%;
-					left: 2.5%;
-					bottom: 37.5%;
+					width: 22.5%;
+					left: 2%;
+					bottom: 39%;
+					z-index: 3;
 				}
 
 				@include lg {
 					width: 22.5%;
 					left: 8%;
 					bottom: -5%;
+					z-index: 7;
 				}
 
 				@include xl {
@@ -1242,66 +1257,76 @@ body #index {
 			aspect-ratio: 1/1;
 
 			&.gift-01 {
-				width: 22.5%;
-				left: 5%;
-				bottom: 29%;
+				width: 20%;
+				left: auto;
+				right: 2%;
+				bottom: 35%;
 				z-index: 4;
 
 				@include sm {
 					width: 20%;
 					left: 22.5%;
+					right:auto;
 					bottom: 6%;
+					z-index: 8;
 				}
 
 				@include md {
 					width: 15%;
-					left: 12.5%;
-					bottom: 25%;
+					left: 13%;
+					bottom: 24%;
+					z-index: 4;
 				}
 
 				@include lg {
 					width: 10%;
 					left: 19%;
 					bottom: 27.5%;
+					z-index: 4;
 				}
 
 				@include xl {
 					width: 8%;
 					left: 28%;
 					bottom: 27.5%;
+					z-index: 4;
 				}
 			}
 
 			&.gift-02 {
 				width: 22.5%;
-				right: 2.5%;
-				bottom: 37.5%;
-				z-index: 6;
+				left: 20%;
+				right: auto;
+				bottom: 0;
+				z-index: 7;
 
 				@include sm {
 					width: 20%;
-					right: 15%;
-					bottom: 42.5%;
-					z-index: 5;
+					left:auto;
+					right: 10%;
+					bottom: 35%;
+					z-index: 4;
 				}
 
 				@include md {
-					width: 17.5%;
-					right: 5%;
-					bottom: 5%;
+					width: 16.5%;
+					right: 12.5%;
+					bottom: 1%;
 					z-index: 6;
 				}
 
 				@include lg {
-					width: 12.5%;
-					right: 7.5%;
-					bottom: 27.5%;
+					width: 10%;
+					right: 1%;
+					bottom: 22%;
+					z-index: 4;
 				}
 
 				@include xl {
-					width: 10.5%;
-					right: 22.5%;
-					bottom: 2.5%;
+					width: 10%;
+					right: 27%;
+					bottom: 6%;
+					z-index: 4;
 				}
 			}
 		}
@@ -1427,7 +1452,8 @@ body #index {
 		}
 
 		& .button-area {
-			width: 90%;
+			width: 100%;
+			max-width: calc(100% - 30px);
 			position: absolute;
 			bottom: auto;
 			top: 0;
@@ -1440,7 +1466,8 @@ body #index {
 
 			@include sm {
 				flex-wrap: wrap;
-				width: 80%;
+				width: 100%;
+				max-width: 510px;
 				bottom: auto;
 				top: 0;
 				left: 50%;
