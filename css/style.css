@@ -1517,7 +1517,8 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 768px) {
   #main-index .box-base .button-area {
     /* 768px 以上 */
-    width: 60%;
+    width: 100%;
+    max-width: 60%;
     bottom: 50%;
     top: auto;
     left: 50%;
@@ -1528,14 +1529,16 @@ body #index .bg-decorate .corner-bottom.corner-right {
 @media (min-width: 992px) {
   #main-index .box-base .button-area {
     /* 992px 以上 */
-    width: 65%;
+    width: 100%;
+    max-width: 65%;
     left: 51.5%;
   }
 }
 @media (min-width: 1200px) {
   #main-index .box-base .button-area {
     /* 1200px 以上 */
-    width: 60%;
+    width: 100%;
+    max-width: 60%;
     left: 50%;
   }
 }
